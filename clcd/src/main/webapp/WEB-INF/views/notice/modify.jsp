@@ -8,7 +8,8 @@
 </head>
 <body>
 <h3>공지글 수정</h3>
-<form action="update.no" method="post">
+<form action="update.no" method="post" enctype="multipart/form-data">
+<input type="hidden" name="id" value="${vo.id }" />
 <table>
 	<tr>
 		<th class='w-px120'>제목</th>
@@ -25,13 +26,29 @@
 					<input type="file" name="file" id="attach-file" />
 			</label>		
 			<span id='file-name'>${vo.filename }</span>
-			<a id="delete-file"><i class="fa-solid fa-circle-minus"></i></a>
+			<a id="delete-file" style='display: ${!empty vo.filename ? "inline" : "none"}'>
+			<i class="fa-solid fa-circle-minus"></i></a>
 		</td>
 	</tr>
 </table>
+<input type="hidden" name="attach" />	<!-- 첨부 파일 저장 시 사용 -->
+
+
 </form>
+<div class='btnSet'>
+	<a class='btn-fill' onclick=" if(emptyCheck() ) { $('form').submit() }">수정</a>
+	<a class='btn-empty' href='detail.no?id=${vo.id }'>취소</a>
+</div>
+
+
 </body>
 </html>
+
+
+
+
+
+
 
 
 

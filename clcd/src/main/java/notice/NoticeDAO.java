@@ -29,7 +29,7 @@ public class NoticeDAO implements NoticeService {
 
 	@Override
 	public void notice_update(NoticeVO vo) {
-		// TODO Auto-generated method stub
+		sql.update("notice.mapper.update",vo);
 
 	}
 

@@ -4,6 +4,15 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="notice.mapper">
 
+<!-- 해당 ID 공지 게시글 내용 수정 -->
+<update id="update">
+	update notice set title=#{title}, content=#{content}
+		, filename = #{filename, jdbcType=VARCHAR}
+		, filepath = #{filepath, jdbcType=VARCHAR} 
+	where id = #{id}
+</update>
+
+
 <!-- 해당 ID 공지글 삭제 -->
 <delete id="delete">
 	delete from notice

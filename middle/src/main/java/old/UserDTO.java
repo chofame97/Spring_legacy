@@ -1,11 +1,14 @@
 package old;
 
 public class UserDTO {
-    private String id , pw ;
+    private String id,pw;
 
     public UserDTO(String id, String pw) {
         this.id = id;
         this.pw = pw;
+    }
+
+    public UserDTO() {
     }
 
     public String getId() {

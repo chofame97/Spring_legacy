@@ -14,26 +14,25 @@ import com.google.gson.Gson;
 import member.MemberDAO;
 import member.MemberVO;
 
-
 @Controller
-
 public class MemberController {
-	
-	@Autowired Common common;
 	@Autowired MemberDAO dao;
 	Gson gson = new Gson();
 	
-	
+	@Autowired @Qualifier("hanul") private SqlSession sql;
+	// 멤버 콘트롤러에 login이라는 맵핑을 만들고 해당하는 맵핑까지 크롬으로 접근하기
 	@ResponseBody
-	@RequestMapping(value ="/login", produces = "application/json;charset=UTF-8")
-	public String login(HttpServletRequest req ) {
-		common.checkIp(req); // F6 STEP OVER , F8 RESUME PROGRAM
-							 // 내가 모르는 class로 디버깅포인트가이동이되어있다면
-							 // F8로 넘기기.
-		MemberVO vo = new MemberVO();
+	@RequestMapping(value = "/login", produces = "application/json;charset=UTF-8")
+	public String login(HttpServletRequest req) {
+		MemberVO  vo = new MemberVO();
 		vo.setId(req.getParameter("id"));
 		vo.setPw(req.getParameter("pw"));
-	 	vo =  dao.login(vo);
-		return gson.toJson(vo); // 보내줄때 Object => String(json) toJson메소드
+		vo = dao.login(vo);
+		return gson.toJson(vo);
+		
 	}
+	
+	
+	
+	
 }

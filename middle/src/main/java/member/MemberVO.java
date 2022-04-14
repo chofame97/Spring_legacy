@@ -2,7 +2,7 @@ package member;
 
 public class MemberVO {
 	private String id, name, pw, addr, post, tel, gender, email, birth, naver, kakao, admin;
-	
+
 	public String getId() {
 		return id;
 	}

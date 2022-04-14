@@ -11,7 +11,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Controller
 public class AndController {
-@Autowired Common common;
 	// res <= encoding produces ( 페이지를 찾을수없습니다 == jsp,html파일없음 )
 	// RequestMapping을 치게되고 return String을 하면
 	// org.springframework.web.servlet.view.InternalResourceViewResolver
@@ -22,7 +21,6 @@ public class AndController {
 	@ResponseBody //<= 해당하는 jsp파일을 찾는게 아니라 메소드 바디에서 응답하겠다.
 	@RequestMapping(value = "/and" , produces = "application/json;charset=UTF-8" )
 	public String test(HttpServletRequest req  ,String param1 , String param2) {
-		common.checkIp(req);
 		//System.out.println("안드에서 보내준값" + req.getParameter("param"));
 		System.out.println("안드에서 String" + param1);
 		System.out.println("안드에서 String" + param2);

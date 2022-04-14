@@ -28,6 +28,54 @@ public class NoticeController {
 	
 	@Autowired private CommonService common;
 	
+	// 공지글 수정 저장 처리 요청
+	@RequestMapping ("/update.no")
+	public String update(NoticeVO vo, String attach
+				, MultipartFile file, HttpSession session ) {
+		
+		// 원래 공지글의 첨부파일 정보를 조회해 온다 (id를 통해)
+		NoticeVO notice = service.notice_detail(vo.getId());
+		String uuid = session.getServletContext().getRealPath("resources") 
+				+ "/" + notice.getFilepath();
+		
+		// 원래 파일이 첨부된 경우 이전 파일을 삭제하고 변경한 파일을 저장
+		// 파일을 첨부한 경우
+		if (! file.isEmpty() ) {
+			// 원래 첨부 파일이 없었는데 수정시 첨부한 경우
+			vo.setFilename(file.getOriginalFilename());
+			vo.setFilepath( common.fileUpload("notice", file, session)  );
+			
+			// 원래 첨부된 파일이 있었다면 물리적인 디스크에서 해당 파일 삭제
+			// 원래 첨부 파일이 있었고 수정시 바꿔서 첨부한 경우 - 원래 파일을 물리적 영역에서 삭제
+			if ( notice.getFilename() != null ) {	// 서버에 파일이 있는지 파악
+				File f = new File(uuid);			// 파일 정보를 File 형태의 f 변수에 할당
+				if (f.exists())  f.delete();		// 기존 첨부 파일이 있다면 삭제
+			}			
+		} else {
+			// 파일을 첨부하지 않은 경우
+			// 1. 원래부터 첨부하지 않았고 수정시에도 첨부하지 않은 경우
+			//    원래 첨부된 파일이 있었는데 삭제한 경우 - 원래의 파일을 물리적 영역에서 삭제
+			if ( attach.isEmpty() ) {
+				if (notice.getFilename() != null) {
+					File f = new File(uuid);
+					if (f.exists())  f.delete();
+				}
+			} else {
+			// 2. 원래 첨부된 파일을 그대로 사용하는 경우	
+				vo.setFilename(notice.getFilename());
+				vo.setFilepath(notice.getFilepath());
+			}
+		}
+		
+		
+		
+		
+		// 화면에서 변경 입력한 정보를 DB에 변경 저장한 후 상세 화면으로 연결
+		service.notice_update(vo);		
+		return "redirect:detail.no?id=" + vo.getId();
+	}
+	
+	
 	// 공지글 수정 화면 요청
 	@RequestMapping ("/modify.no")
 	public String modify(int id, Model model) {
