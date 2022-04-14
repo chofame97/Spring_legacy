@@ -41,7 +41,7 @@
 	<!-- 1. 관리자로 로그인 경우에만 수정, 삭제 버튼 표시
 	     2. 로그인한 사용자(관리자)가 쓴 글인 경우 -->
 	<c:if test="${loginInfo.id eq vo.writer }">
-		<a class='btn-fill'>수정</a>
+		<a class='btn-fill' href='modify.no?id=${vo.id }'>수정</a>
 		<a class='btn-fill' onclick=" if(confirm('정말 삭제?')) { href='delete.no?id=${vo.id}' }">삭제</a>
 	</c:if>
 </div>

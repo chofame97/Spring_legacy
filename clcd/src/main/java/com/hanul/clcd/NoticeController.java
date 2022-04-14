@@ -1,5 +1,6 @@
 package com.hanul.clcd;
 
+import java.io.File;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletResponse;
@@ -27,6 +28,14 @@ public class NoticeController {
 	
 	@Autowired private CommonService common;
 	
+	// 공지글 수정 화면 요청
+	@RequestMapping ("/modify.no")
+	public String modify(int id, Model model) {
+		// 해당 공지글 정보를 DB에서 조회해와 수정화면에 출력
+		model.addAttribute("vo", service.notice_detail(id));
+		return "notice/modify";
+	}
+	
 	// 공지글 삭제처리 요청
 	@RequestMapping ("/delete.no")
 	public String delete(int id, HttpSession session) {
@@ -35,8 +44,9 @@ public class NoticeController {
 		NoticeVO notice = service.notice_detail(id);
 		String uuid = session.getServletContext().getRealPath("resources") 
 						+ "/" + notice.getFilepath();
-		if ( notice.getFilename() = null ) { // 파일명 또는 파일경로가 있는지 판단
-			
+		if ( notice.getFilename() != null ) { // 파일명 또는 파일경로가 있는지 판단(없지 않다면)
+			File file = new File(uuid);
+			if (file.exists()) file.delete(); // uuid 내에 file이 존재한다면 삭제 처리
 		}
 		
 		// 해당 공지글 정보를 DB에서 삭제한 후 목록화면으로 연결
