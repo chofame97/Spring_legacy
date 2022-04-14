@@ -1,0 +1,30 @@
+package com.hanul.clcd;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import notice.NoticeServiceImpl;
+
+@Controller
+public class NoticeController {
+
+	@Autowired private NoticeServiceImpl service;
+	
+	
+	@RequestMapping ("/list.no")
+	public String list(HttpSession session, Model model) {
+		
+		session.setAttribute("category", "no");
+		// DB에서 공지글 목록을 조회해와 목록화면에 출력
+		model.addAttribute("list", service.notice_list()) ;
+		
+		
+		return "notice/list";
+	}
+	
+	
+}

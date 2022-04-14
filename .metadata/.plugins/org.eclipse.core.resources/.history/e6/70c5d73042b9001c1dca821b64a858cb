@@ -1,0 +1,9 @@
+package notice;
+
+public interface NoticeService {
+	// CRUD (Create, Read, Update, Delete)
+	
+	void notice_insert();	// 공지글 신규 저장(C)
+	
+	
+}

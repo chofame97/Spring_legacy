@@ -1,0 +1,6 @@
+package com.and.mid;
+
+public class MemberController {
+//멤버콘트롤러에 login이라는 맵핑을 만들고 해당하는 맵핑까지 크롬으로 접근하기.!
+	
+}

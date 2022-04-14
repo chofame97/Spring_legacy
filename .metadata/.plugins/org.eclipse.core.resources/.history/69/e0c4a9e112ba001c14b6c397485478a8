@@ -1,0 +1,8 @@
+/** 첨부 파일 관련 처리 함수 */
+
+$(document).on('change', '#attach-file', function() {
+	
+	
+	
+	
+})

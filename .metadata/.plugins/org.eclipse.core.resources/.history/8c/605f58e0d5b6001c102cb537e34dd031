@@ -1,0 +1,60 @@
+/**
+ * 
+ */
+ 
+ var join = {
+	
+	// tag 의 상태를 확인할 함수를 선언(tag_status)하고 받아오는 값을 tag 변수로 지정
+	tag_status: function ( tag ) {
+		var data = tag.val();	// tag 내 입력된 값을 data 변수에 할당
+		tag = tag.attr('name');	// tag 의 name 속성의 값을 확인 ex) id, pw, email
+		
+// tag 에 입력한 data에 들어있는데 tag의 name 속성의 값으로 id, pw, pw_chk, email 인지를
+// 구분(판단)하여 유효성 검사 진행하려고 함.
+		if (tag == 'id')		return this.id_status( data );
+		else if ( tag == 'pw')	return this.pw_status( data );
+		// id 의 상태가 유효한지 아닌지 판단이 필요하므로 함수 선언( id_status() )
+ 	
+	}
+	
+	, pw_status : function () {
+		
+	}
+	
+	
+	, id_status : function( id ) {	// id 의 상태 확인
+	
+		var reg = /[^a-z0-9]/g	// 소문자, 숫자 외 입력시
+	
+		/* 입력값이 없을 경우 */
+		if (id == '')					return this.common.empty;
+		/* 입력값에 공백이 있을 경우*/
+		else if (id.match(space))		return this.common.space;
+		/* 소문자, 숫자 외 문자 입력 여부 확인 */
+		else if (reg.test(id))			return this.id.invalid;
+		/* 5자 이하 입력 여부 확인 */
+		else if (id.length < 5)			return this.common.min; 
+		/* 10자 이하 입력 여부 확인 */
+		else if (id.length > 10)		return this.common.max;
+		else 							return this.id.valid;
+		
+	}	
+	, id : { // id의 기준 설정
+		invalid : { code : 'invalid', desc : '아이디는 영문 소문자, 숫자만 입력 가능' }
+		, valid : { code : 'valid', desc : '사용 가능한 아이디 입니다.'}
+		
+		
+	}
+	, common : {
+		empty : { code : 'invalid', desc : '입력하세요!' }
+		, space : {code : 'invalid', desc : '공백없이 입력하세요!'}
+		, max : { code : 'invalid', desc : '최대 10자 이하로 입력하세요'}
+		, min : { code : 'invalid', desc : '최소 5자 이상 입력하세요'}		
+	}
+	
+}
+var space = /\s/g;	// 전체 문자 내 공백이 있는지... space 할당
+
+
+
+

@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>공지글 안내</h3>
+<table>
+	<tr>
+		<th class='w-px120'>제목</th>
+		<td class='left' colspan="5">${vo.title }</td>
+	</tr>
+	<tr>
+		<th>작성자</th>
+		<td>${vo.name }</td>
+		<th>작성일자</th>
+		<td>${vo.writedate }</td>
+		<th>조회수</th>
+		<td>${vo.readcnt }</td>
+	</tr>
+	<tr>
+		<th>내용</th>
+		<td>${vo.content }</td>
+	</tr>
+	<tr>
+		<th>첨부파일</th>
+		<td></td>
+	</tr>
+	
+	
+	
+	
+
+</table>
+</body>
+</html>

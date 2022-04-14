@@ -1,0 +1,7 @@
+package com.and.mid;
+
+public class TestDAO {
+	public void test() {
+		System.out.println("출력");
+	}
+}

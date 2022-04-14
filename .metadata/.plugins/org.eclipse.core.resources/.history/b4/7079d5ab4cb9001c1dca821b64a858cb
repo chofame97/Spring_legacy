@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+#content {
+	min-width: 1280px; min-height: 650px; height: 100%; padding : 20px 0;	
+}
+
+img {
+	vertical-align: middle;		/* 세로축 가운데 정렬 */
+}
+
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid;
+	border-collapse: collapse;	/* 테두리 겹침 설정 collapse : 겹치지 않게 처리 */
+}
+
+table tr { height: 46px; }
+
+table th, table td {
+	border: 1px solid;
+	padding: 5px 10px;
+}
+
+table th { background: #f6f6f6; }
+
+table tr td a:hover { font-weight: 700; color: red }
+
+/* table tr:hover td { */
+/* 	background: #ccc; */
+/* } */
+
+.btnSet { margin-top: 20px; }
+
+a.btn-fill, a.btn-empty {
+	text-align: center;
+	padding: 3px 10px;
+	border: 1px solid #3367d6;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px;
+	       /* 오른쪽, 아래쪽, 번짐 정도 */
+}
+
+a.btn-fill {
+	background: #3367d6;
+	color: #fff;	
+}
+
+a.btn-empty {
+	background: #fff;
+	color: #3367d6;
+}
+
+a.btn-fill-s {
+	font-size: 13px; font-weight: bold;
+	padding: 1px 10px;
+	border: 1px solid #c4dafc;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px #022d72;
+	background : #b1cdfa;
+	color: #0000cd;	
+}
+
+a:hover { cursor: pointer; }
+
+input {
+	height: 22px;
+	padding: 3px 5px;
+	font-size: 15px;
+}
+
+input[name=addr] { width: calc(100% - 24px) }
+	/* calc(100% - 24px) 폭 100%에서 양쪽 24px(여백) 만큼 뺀 값만큼 늘림 */
+
+input[type=radio] {
+	width: 18px;
+	margin: 0 5px 3px;
+	vertical-align: middle;
+}
+
+select:focus, input:focus, textarea:focus { outline: none;}
+
+ul { list-style: none; padding: 0px;}
+
+select {height: 34px; border: 1px solid #b0b0b0; padding : 0 5px; cursor: pointer;}
+
+#list-top { padding:  20px 10%}
+#list-top div { height: 36px;}
+#list-top ul { margin: 0; display: flex;}
+#list-top ul li * { vertical-align: middle;}
+#list-top ul {margin-left: 3px;}
+#list-top ul:first-child { float: left;}
+#list-top ul:last-child {float: right;}
+
+.center {
+	position: absolute; left: 50%; top: 50%;
+	transform:translate(-50%, -50%);	
+}
+
+/* width 값을 class로 등록하여 관리 */
+.w-pct80 {width : 80%}
+.w-pct70 {width : 70%}
+.w-pct60 {width : 60%}
+.w-pct50 {width : 50%}
+.w-pct40 {width : 40%}
+.w-pct30 {width : 30%}
+.w-pct20 {width : 20%}
+
+.w-px300 {width : 300px}
+.w-px250 {width : 250px}
+.w-px200 {width : 200px}
+.w-px180 {width : 180px}
+.w-px160 {width : 160px}
+.w-px140 {width : 140px}
+.w-px120 {width : 120px}
+.w-px100 {width : 100px}
+.w-px90 {width : 90px}
+.w-px80 {width : 80px}
+.w-px70 {width : 70px}
+.w-px60 {width : 60px}
+.w-px50 {width : 50px}
+.w-px40 {width : 40px}
+.w-px30 {width : 30px}
+.w-px20 {width : 20px}
+.w-px10 {width : 10px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

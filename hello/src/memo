@@ -1,0 +1,61 @@
+@Controller   를 클래스명 위에 부여함으로 메모리에 올리기 위해서 어노테이션을 매겨 선언
+  - 해당 클래스가 Controller 역할을 하게 됨.
+@RequestMapping("/first")
+  - 위와 같이 선언하면 메소드 호출시 "/first" 요청이 있으면 선언된 메소드 동작  
+
+○ 컨트롤러 작성
+   1. 클래스 생성 후 @Controller 를 지정
+   2. @RequestMapping 을 이용해 클라이언트가 요청한 경로 지정
+           -  지정된 메소드에서 필요한 로직을 처리한 후
+              화면명 지정 : 
+              화면에 전달할 데이터를 ... 
+
+○ 화면에 데이터를 전달하는 형태 : Model, ModelAndView
+   1. Model 
+      - 실행되어질 Method의 파라미터로 Model 타입의 변수를 선언한 후
+        선언한 변수에 attibute로 데이터를 담는다.
+         : Model타입변수.addAttribute("속성명", 저장할 데이터);
+         
+   2. ModelAndView
+      - ModelAndView 는 객체방식으로 작성되고 돌려주기 때문에 인자(값)가 없으며
+        리턴 데이터형도 ModelAndView 임.
+        아래와 같이 객체를 생성한 후 데이터는 addObject 로 담는다.
+        
+            ModelAndView model = new ModelAndView();
+            model.addObject("속성명", 저장할 데이터);
+            
+        // 값을 전달할 화면 페이지를 
+            model.setViewName("index");
+        // 선언한 ModelAndView 객체를 반환한다.
+            return model;
+   --------------------------------------------------------------------------------     
+   Model ▶ model.addAttribute 를 사용하여 데이터만 저장
+   ModelAndView ▶ 데이터와 이동하고자 하는 View Page를 같이 저장(지정)
+   
+
+○ 화면을 통해 전달된 파라미터를 접근하는 방법
+   1. HttpServletRequest 를 사용
+      - getParameter() 를 사용
+   2. @RequestParam 을 사용   ★
+      - 매핑된 메서드의 파라미터로 @RequestParam 을 지정하여 선언        
+   3. 데이터 객체(DTO/VO)를 사용 
+      (스프링에선 주로 VO 용어를 사용, 데이터가 영속성을 가질 때에 VO) ★★
+      - 매핑된 메서드의 파라미터로 데이터 객체 타입으로 지정하여 선언     
+   4. @PathVariable 사용 : 경로를 통해 파라미터를 전달...
+      - 요청 경로에 변수 형태로 데이터를 지정하여 선언      
+      
+○ 응답할 화면을 연결하는 형태 : forward, redirect
+   1. forward	(return "home";)        
+      - 요청한 url과 응답하는 페이지가 서로 다르게 지정할 수 있는 형태
+      - 실제 응답하는 페이지의 url이 아닌, 요청하는 url이 유지되는 형태
+   2. redirect  (return "redirect:/";)
+      - 요청하는 url에 해당하는 페이지가 응답하는 형태
+        
+        
+        
+        
+        
+        
+        
+        
+        

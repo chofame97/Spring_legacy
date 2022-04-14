@@ -1,0 +1,64 @@
+package com.hanul.clcd;
+
+import java.util.HashMap;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import member.MemberServiceImpl;
+import notice.NoticeServiceImpl;
+import notice.NoticeVO;
+
+@Controller
+public class NoticeController {
+
+	@Autowired private NoticeServiceImpl service;
+	
+	// 회원정보를 처리하기 위한 service 필요 (MemberServiceImpl)
+	@Autowired private MemberServiceImpl member;
+	
+	
+	// 신규 공지사항 게시글 저장처리 요청
+	@RequestMapping ("/insert.no")
+	public String insert(NoticeVO vo) {
+		
+		
+		
+		// 로그인된 사용자의 id를 가져와 글쓴이(writer)에 담기 위한 처리
+		
+		return "";
+	}
+	
+	
+	// 신규 공지사항 입력(글쓰기) 화면 요청
+	@RequestMapping ("/new.no")
+	public String notice() {
+		return "notice/new";
+	}
+	
+	
+	
+	@RequestMapping ("/list.no")
+	public String list(HttpSession session, Model model) {
+		
+		// 공지글 처리 중 임의로 로그인해 두기 (admin) - 나중에 삭제할 것
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("id", "admin");
+		map.put("pw", "admin");
+		
+		session.setAttribute("loginInfo", member.member_login(map));
+		
+		
+		session.setAttribute("category", "no");
+		// DB에서 공지글 목록을 조회해와 목록화면에 출력
+		model.addAttribute("list", service.notice_list()) ;
+		
+		return "notice/list";
+	}
+	
+	
+}

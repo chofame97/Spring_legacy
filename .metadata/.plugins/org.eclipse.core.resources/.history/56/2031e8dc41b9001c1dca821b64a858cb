@@ -1,0 +1,10 @@
+package notice;
+
+import java.sql.Date;
+
+public class NoticeVO {
+	private int id, readcnt;
+	private String title, content, writer;
+	private Date writedate;
+	private String filename, filepath;
+}
