@@ -8,19 +8,23 @@
 		<put-attribute name="header" value="/WEB-INF/views/include/header.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/include/footer.jsp" />
 	</definition>
+	<definition name="*/*" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />	
+	</definition>
 
 	<definition name="*" extends="layout">
 		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp" />
 	</definition>
 	
-	<definition name="*/*" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />	
-	</definition>
 	
 	<definition name="member/login" template="/WEB-INF/views/tiles/default.jsp">
 		<put-attribute name="content" value="/WEB-INF/views/member/login.jsp"/>
 	</definition>
-
+	
+	<definition name="error/*" template="/WEB-INF/views/tiles/default.jsp">
+		<put-attribute name="content" value="/WEB-INF/views/error/{1}.jsp"></put-attribute>
+	</definition>
+	
 </tiles-definitions>       
 
 
