@@ -22,7 +22,7 @@ public class MemberController {
 	@Autowired private MemberServiceImpl service;
 	@Autowired private CommonService common;
 	
-	private String naver_client_id = "b8TANmFu7fkkL_ObmdQ_";
+	private String naver_client_id = "u_Ea2_TReHWZ7vgvMkNH";
 	
 	
 	
@@ -99,7 +99,7 @@ public class MemberController {
 		
 		StringBuffer url = new StringBuffer("https://nid.naver.com/oauth2.0/token?grant_type=authorization_code");
 		url.append("&client_id=").append(naver_client_id);
-		url.append("&client_secret=3RAjYknyEX");
+		url.append("&client_secret=2jPQJffkdm");
 		url.append("&code=").append(code);
 		url.append("&state=").append(state);
 		

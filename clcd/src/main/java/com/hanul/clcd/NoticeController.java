@@ -10,11 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import common.CommonService;
 import member.MemberServiceImpl;
 import member.MemberVO;
+import notice.NoticePage;
 import notice.NoticeServiceImpl;
 import notice.NoticeVO;
 
@@ -27,6 +29,31 @@ public class NoticeController {
 	@Autowired private MemberServiceImpl member;
 	
 	@Autowired private CommonService common;
+	
+	// 답글 저장 처리 요청
+	@RequestMapping ("/reply_insert.no")
+	public String reply_insert(NoticeVO vo, MultipartFile file, HttpSession session) {
+		// 첨부 파일이 있을 경우
+		if ( ! file.isEmpty()) {
+			vo.setFilename(file.getOriginalFilename());
+			vo.setFilepath( common.fileUpload("notice", file, session) );
+		}
+		
+		// 로그인 된 사용자의 id를 가져와 글쓴이(writer) 에 담기 위한 처리
+		vo.setWriter( ((MemberVO)session.getAttribute("loginInfo")).getId() );
+		service.notice_reply_insert(vo);
+		
+		return "redirect:list.no";
+	}
+	
+	
+	// 공지글 답글 작성 화면 요청
+	@RequestMapping ("/reply.no")
+	public String reply(int id, Model model) {
+		// 원글의 상세 정보를 DB에서 조회해와 답글 화면에 출력
+		model.addAttribute("vo", service.notice_detail(id));
+		return "notice/reply";
+	}
 	
 	// 공지글 수정 저장 처리 요청
 	@RequestMapping ("/update.no")
@@ -124,6 +151,10 @@ public class NoticeController {
 		model.addAttribute("crlf", "\r\n");
 // \r이라는 탈출 문자(Escape Character)는 Carriage Return(CR)이란 의미를 가지며
 // \n은 Line Feed(LF) 란 의미를 가지며 일반적으로 New Line 이라고도 읽는다.
+		
+		// 페이징 처리한 결과값을 model에 담아 보냄
+		model.addAttribute("page", page);
+		
 		return "notice/detail";
 	}
 	
@@ -159,24 +190,45 @@ public class NoticeController {
 	}
 	
 	
+	// 공지사항의 페이지 처리를 위해 개체로 선언한 NoticePage 클래스를
+	// 자동 주입하여 사용하게 함.
+	@Autowired private NoticePage page;
 	
 	@RequestMapping ("/list.no")
-	public String list(HttpSession session, Model model) {
+	public String list(HttpSession session, @RequestParam (defaultValue = "1") 
+			int curPage, Model model, String search, String keyword) {
 		
 		// 공지글 처리 중 임의로 로그인해 두기 (admin) - 나중에 삭제할 것
 		HashMap<String, String> map = new HashMap<String, String>();
-		map.put("id", "admin");
-		map.put("pw", "admin");
+		map.put("id", "hanul");
+		map.put("pw", "hanul");
 		
 		session.setAttribute("loginInfo", member.member_login(map));
 		
 		
 		session.setAttribute("category", "no");
 		// DB에서 공지글 목록을 조회해와 목록화면에 출력
-		model.addAttribute("list", service.notice_list()) ;
+		// model.addAttribute("list", service.notice_list()) ;
+		
+		// curPage를 입력받지 않았지만 @RequestParam 어노테이션을 통해 기본값 1을 부여
+		page.setCurPage(curPage); // 현재 페이지에 대한 정보를 담기 위한 처리
+		// 검색조건, 검색어 정보를 담음
+		page.setSearch(search);
+		page.setKeyword(keyword);
+		
+		// DB에서 공지글목록을 조회한 후 목록화면에 출력
+		model.addAttribute("page", service.notice_list(page));
 		
 		return "notice/list";
 	}
 	
 	
 }
+
+
+
+
+
+
+
+

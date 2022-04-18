@@ -28,7 +28,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-
+<script src='js/file_check.js'></script>
 </head>
 <!-- 기본 layout 으로 header, content, footer 로 구성된 형태 -->
 

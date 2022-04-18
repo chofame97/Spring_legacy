@@ -12,6 +12,25 @@ public class PageVO {
 	int curBlock;			// 현재 블럭
 	int beginPage, endPage;	// 각 블럭에 보여질 시작, 끝 페이지 번호
 	
+	String search, keyword;	// 검색조건, 검색어
+	
+	
+	public String getSearch() {
+		return search;
+	}
+
+	public void setSearch(String search) {
+		this.search = search;
+	}
+
+	public String getKeyword() {
+		return keyword;
+	}
+
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+
 	public int getTotalList() {
 		return totalList;
 	}
@@ -31,6 +50,25 @@ public class PageVO {
 		totalBlock = totalPage / blockPage;
 		if (totalPage % blockPage > 0) ++totalBlock;
 		
+		// 각 페이지의 끝 목록번호 : 총 목록수 - (현재 페이지번호-1) * 페이지당 보여질 목록수
+		endList = totalList - (curPage -1) * pageList;
+		
+		// 각 페이지의 시작 목록번호 : 끝 목록번호 - (페이지당 보여질 목록수 - 1)
+		beginList = endList - (pageList - 1);
+		
+		// 블럭번호(curBlock) : 페이지번호(curPage) / 블럭당 보여질 페이지수(blockPage)
+		curBlock = curPage / blockPage;
+		if ( curPage % blockPage > 0) ++curBlock;
+		
+		// 각 블럭의 끝 페이지번호 : 블럭번호 * 블럭당 보여질 페이지수
+		endPage = curBlock * blockPage;
+		
+		// 각 블럭의 시작 페이지번호 : 끝 페이지번호 - (블럭당 보여질 페이지수 - 1)
+		beginPage = endPage - (blockPage -1);
+		
+		// 마지막 블럭에서 끝 페이지번호가 총 페이지수보다 클 수 없으므로
+		// 총 페이지수를 끝 페이지번호로 한다.
+		if (endPage > totalPage) endPage = totalPage;
 	}
 	public int getTotalPage() {
 		return totalPage;

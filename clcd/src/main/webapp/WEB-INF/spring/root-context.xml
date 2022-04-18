@@ -9,6 +9,6 @@
 	<!-- DB와 관련된 설정 파일(default.xml)을 포함(import) -->
 	<import resource="classpath:data/default.xml"/>
 	
-	<context:component-scan base-package="notice, customer, employee, member, common" />
+	<context:component-scan base-package="notice, notice ,customer, employee, member, common" />
 		
 </beans>

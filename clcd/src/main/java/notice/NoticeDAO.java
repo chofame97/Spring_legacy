@@ -29,8 +29,7 @@ public class NoticeDAO implements NoticeService {
 
 	@Override
 	public void notice_update(NoticeVO vo) {
-		sql.update("notice.mapper.update",vo);
-
+		sql.update("notice.mapper.update", vo);
 	}
 
 	@Override
@@ -43,4 +42,28 @@ public class NoticeDAO implements NoticeService {
 		sql.update("notice.mapper.read", id);
 	}
 
+	@Override
+	public NoticePage notice_list(NoticePage page) {
+
+		// 1. 먼저 총 글의 개수를 알아야 페이지 처리를 할 수 있기 때문에 전체 글 개수를 조회
+		int pagecnt = sql.selectOne("notice.mapper.totalList", page);
+		page.setTotalList(pagecnt);
+		
+		List<NoticeVO> list = sql.selectList("notice.mapper.list", page);
+		page.setList(list);
+		return page;
+	}
+
+	@Override
+	public void notice_reply_insert(NoticeVO vo) {
+		sql.insert("notice.mapper.reply_insert", vo);
+	}
+
 }
+
+
+
+
+
+
+
