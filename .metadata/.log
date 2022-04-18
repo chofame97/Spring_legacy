@@ -9297,3 +9297,63 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-14 17:47:51.095
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VctTCKcQ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:32.369
+!MESSAGE Boot LS startup time from start to initialized: 12200ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.124
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TAWRdcyRisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.134
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.139
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.139
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.139
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.140
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TAWRdcyR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.145
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.146
+!MESSAGE buffering callback sts4.classpath.TAWRdcyR middle false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.147
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.152
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.154
+!MESSAGE buffering callback sts4.classpath.TAWRdcyR clcd false 49
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.154
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.156
+!MESSAGE classpath=25 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.157
+!MESSAGE buffering callback sts4.classpath.TAWRdcyR exam false 25
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.158
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.160
+!MESSAGE classpath=27 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.161
+!MESSAGE buffering callback sts4.classpath.TAWRdcyR hello false 27
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.161
+!MESSAGE executing callback sts4.classpath.TAWRdcyR 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-18 09:18:33.763
+!MESSAGE executing callback sts4.classpath.TAWRdcyR SUCCESS [done]

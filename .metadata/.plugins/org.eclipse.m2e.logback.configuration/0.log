@@ -10705,3 +10705,4 @@ java.net.URISyntaxException: Illegal character in path at index 15: file:/D:/Spr
 2022-04-14 17:44:47,791 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
 2022-04-14 17:44:47,793 [Worker-100: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-04-14 17:44:47,794 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-18 09:18:23,027 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
