@@ -15,57 +15,52 @@ import com.google.gson.Gson;
 
 import customer.CusDTO;
 
-
 @Controller
 public class CustomerController {
 	
-
 	@Autowired @Qualifier("hanul") SqlSession sql;
 	Gson gson = new Gson();
 	//1. Spring에서 컨트롤러를 추가하고 해당하는 맵핑까지 정상적으로 오는지 URL테스트.
 	// (localhost/mid/list.cu) ↓
 	
+	//sql.selectone <= 한건 조회 ( 한건이상조회하면 에러남)
+	//sql.selectlist<= 한건 이상 조회 ( 오류안남)
 	
-	// sql.selectone 1건 조회
-	// sql.seleclist 여러건 조회
 	@ResponseBody
 	@RequestMapping(value ="/list.cu", produces = "application/json;charset=UTF-8")
-	public String login() {
-		System.out.println(sql.selectOne("cus.mapper.test")+"");
-		List<CusDTO> list = sql.selectList("cus.mapper.list");
-		/*
-		 * for(CusDTO cusDTO : list) { System.out.println(cusDTO.getId()); }
-		 */
-		System.out.println(gson.toJson(list));
+	public String list(HttpServletRequest req ) {
+		String data = req.getParameter("data");
+		System.out.println(data);
+		List<CusDTO> list = sql.selectList("cus.mapper.list",data);
+		//내가 가지고있는 어떤 객체를 json(String) gson.toJson
 		return gson.toJson(list);
 	}
-	
 	@ResponseBody
 	@RequestMapping(value ="/update.cu", produces = "application/json;charset=UTF-8")
-	public String update(HttpServletRequest req) {
+	public String update(HttpServletRequest req ) {
+		
 		System.out.println(req.getParameter("dto"));
 		CusDTO dto = gson.fromJson(req.getParameter("dto"), CusDTO.class);
-		List<CusDTO> list = sql.selectList("cus.mapper.update",dto);
+		//내가 가지고있는 어떤 객체를 json(String) gson.toJson
+		//toJson DTO나 여러 형태를 String json로 만들어줌
+		//fromJson String json형태를 내가 원하는 DTO나 여러 객체 형태로 바꿔줌.
+		//mybatis update <= 그결과를 성공 1
 		
-		
-		
-		System.out.println(gson.toJson(list));
-		
+		//1.데이터베이스에서 올바른 쿼리를 이용해서 업데이트 해보기.<=
+		//2.해당하는 쿼리를 mybatis 맵퍼에 등록하기. o
+		//3.Controller에서 실행하기 ↑
+		System.out.println(sql.update("cus.mapper.update" , dto));
+		//4.그결과가 성공인지 체크.
 		return "";
 	}
+	      
 	@ResponseBody
 	@RequestMapping(value ="/delete.cu", produces = "application/json;charset=UTF-8")
-	public String delete(HttpServletRequest req) {
+	public String delete(HttpServletRequest req ) {
 		System.out.println(req.getParameter("dto"));
 		CusDTO dto = gson.fromJson(req.getParameter("dto"), CusDTO.class);
-		List<CusDTO> list = sql.selectOne("cus.mapper.delete",dto);
-		
-	
-		
-		System.out.println(list);
-		
+
+		System.out.println(sql.delete("cus.mapper.delete" , dto));
 		return "";
-	}
-	
-	
+	}  
 }
