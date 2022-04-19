@@ -7,6 +7,6 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<import resource="classpath:data/default.xml"/>
-	<context:component-scan base-package="member,customer" />
+	<context:component-scan base-package="member,customer,employee" />
 		
 </beans>

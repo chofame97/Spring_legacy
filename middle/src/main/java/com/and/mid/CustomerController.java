@@ -29,6 +29,7 @@ public class CustomerController {
 	@ResponseBody
 	@RequestMapping(value ="/list.cu", produces = "application/json;charset=UTF-8")
 	public String list(HttpServletRequest req ) {
+		// F6 STEP OVER , F8 RESUME PROGRAM
 		String data = req.getParameter("data");
 		System.out.println(data);
 		List<CusDTO> list = sql.selectList("cus.mapper.list",data);
@@ -38,7 +39,6 @@ public class CustomerController {
 	@ResponseBody
 	@RequestMapping(value ="/update.cu", produces = "application/json;charset=UTF-8")
 	public String update(HttpServletRequest req ) {
-		
 		System.out.println(req.getParameter("dto"));
 		CusDTO dto = gson.fromJson(req.getParameter("dto"), CusDTO.class);
 		//내가 가지고있는 어떤 객체를 json(String) gson.toJson
