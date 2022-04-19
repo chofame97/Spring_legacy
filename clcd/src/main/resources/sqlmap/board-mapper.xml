@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board.mapper">
+
+<!-- 방명록 신규 글 저장 -->
+<insert id="insert">
+	insert into board(title, content, writer, filename, filepath)
+	values (#{title}, #{content}, #{writer},
+			#{filename, jdbcType=VARCHAR} , #{filepath, jdbcType=VARCHAR} )
+</insert>
+
+<sql id='where_search'>
+	<if test="search == 'title' or search == 'content' ">
+		where ${search} like '%'||#{keyword}||'%'
+	</if>
+	<if test="search=='writer'">
+		where <include refid="search_writer" />
+	</if>
+	<if test="search == 'all' ">
+		where title like '%'||#{keyword}||'%'
+		or content like '%'||#{keyword}||'%'
+		or <include refid="search_writer" /> 
+	</if>
+	
+</sql>
+<sql id='search_writer'>
+	writer in ( select id from member where name like '%'||#{keyword}||'%' )		
+</sql>
+
+
+
+<!-- 전체 게시글 수 조회 -->
+<select id="totalList" resultType="integer">
+	select count(*) from board <include refid="where_search" />
+</select>
+
+
+<!-- 페이징 처리 전체 게시글 조회 -->
+<select id="list" resultType="board.BoardVO">
+	select * 
+	from (select rownum no, b.*, ( select name from member where id = b.writer) name
+			from ( select * from board <include refid="where_search" />
+					order by id) b
+			order by no desc)
+	where no between #{beginList} and #{endList}			
+</select>  
+</mapper>
