@@ -13,8 +13,16 @@ public class PageVO {
 	int beginPage, endPage;	// 각 블럭에 보여질 시작, 끝 페이지 번호
 	
 	String search, keyword;	// 검색조건, 검색어
+	private String viewType = "list";	// 게시판 형태(기본 : 리스트형태)
 	
-	
+	public String getViewType() {
+		return viewType;
+	}
+
+	public void setViewType(String viewType) {
+		this.viewType = viewType;
+	}
+
 	public String getSearch() {
 		return search;
 	}

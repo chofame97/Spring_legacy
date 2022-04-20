@@ -136,6 +136,27 @@ select {height: 34px; border: 1px solid #b0b0b0; padding : 0 5px; cursor: pointe
 	text-align: right;
 }
 
+ul.grid {width: 80%; margin: 0 10%; display: inline-block;}
+
+ul.grid li {
+	float: left; width: 19%; height: 150px; margin: 20px 1.25% 0 0;
+		border: 1px solid #b0b0b0; box-sizing: border-box;
+}
+
+ul.grid li:nth-child(5n) { margin-right: 0 }
+/* (5n) 5번째마다(n) 의미 */
+
+ul.grid li div { text-align: left; padding : 9px 10px;}
+ul.grid li div:nth-child(2) { padding: 0px 10px;}
+ul.grid li div:nth-child(1) { 
+	height: 65px;
+	overflow: hidden; text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp :3;
+	-webkit-box-orient : vertical;
+}
+
+
 /* width 값을 class로 등록하여 관리 */
 .w-pct80 {width : 80%}
 .w-pct70 {width : 70%}

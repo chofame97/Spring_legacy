@@ -20,14 +20,12 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public BoardVO board_detail(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.board_detail(id);
 	}
 
 	@Override
 	public int board_read(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.board_read(id);
 	}
 
 	@Override

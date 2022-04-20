@@ -23,6 +23,8 @@
 	<resources location="/resources/css/" mapping="/css/**" />
 	<!-- js 폴더 맵핑 -->
 	<resources location="/resources/js/" mapping="/js/**" />
+	<!-- upload 폴더 맵핑 -->
+	<resources location="/resources/upload/" mapping="/upload/**" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

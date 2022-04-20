@@ -4,6 +4,19 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="board.mapper">
 
+<!-- 해당 방명록 글의 조회수 증가 -->
+<update id="read">
+	update board set readcnt = readcnt+1
+	where id = #{id}
+</update>
+
+<!-- 해당 방명록 글의 상세 정보 조회 -->
+<select id="detail" resultType="board.BoardVO">
+	select b.*, (select name from member where id = b.writer) name
+	from board b
+	where id = #{id}
+</select>
+
 <!-- 방명록 신규 글 저장 -->
 <insert id="insert">
 	insert into board(title, content, writer, filename, filepath)
