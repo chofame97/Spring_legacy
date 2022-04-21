@@ -3,13 +3,34 @@ package board;
 import java.sql.Date;
 
 public class BoardVO {
-	private int id,readcnt,no;
-	private String title, content, writer, filename, filepath, name;
+	private int id, readcnt, no, prev, next;
+	private String title, content, writer, filename, filepath, name, next_title, prev_title;
 	private Date writedate;
 	
-	
-	
-	
+	public int getPrev() {
+		return prev;
+	}
+	public void setPrev(int prev) {
+		this.prev = prev;
+	}
+	public int getNext() {
+		return next;
+	}
+	public void setNext(int next) {
+		this.next = next;
+	}
+	public String getNext_title() {
+		return next_title;
+	}
+	public void setNext_title(String next_title) {
+		this.next_title = next_title;
+	}
+	public String getPrev_title() {
+		return prev_title;
+	}
+	public void setPrev_title(String prev_title) {
+		this.prev_title = prev_title;
+	}
 	public int getId() {
 		return id;
 	}
@@ -70,6 +91,7 @@ public class BoardVO {
 	public void setWritedate(Date writedate) {
 		this.writedate = writedate;
 	}
+	
 	
 	
 	

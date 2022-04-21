@@ -40,6 +40,12 @@ img.social {
 
 
 </style>
+
+<!-- <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.8/sweetalert2.min.css" rel="stylesheet"> 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+
 </head>
 <body>
 <!-- <h3>로그인 페이지</h3> -->
@@ -69,11 +75,17 @@ img.social {
 
 function go_login() {
 	if($('#userid').val() == '') {	// 아이디 입력값이 없으면
-		alert('아이디를 입력하세요!');
+		Swal.fire('아이디를 입력하세요!')
+		//alert('아이디를 입력하세요!');
 		$('#userid').focus();
 		return;
 	} else if ($('#userpw').val() == '') { // 비밀번호 입력값이 없으면
-		alert('비밀번호를 입력하세요!');
+		Swal.fire(
+			'비밀번호 왜 안 입력?',			// alert 제목
+			'비밀번호를 꼭 입력하세요!',	// alert 본문(내용)
+			'error'							// alert 타입(아이콘)
+		);
+		// alert('비밀번호를 입력하세요!');
 		$('#userpw').focus();
 		return;
 	}

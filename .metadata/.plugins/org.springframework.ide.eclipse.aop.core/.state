@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="hello"/>
 <aop-project name="SpringProject"/>
+<aop-project name="hello"/>
 <aop-project name="exam"/>
 <aop-project name="clcd"/>
 <aop-project name="middle"/>

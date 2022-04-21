@@ -42,7 +42,6 @@ public class NoticeController {
 		// 로그인 된 사용자의 id를 가져와 글쓴이(writer) 에 담기 위한 처리
 		vo.setWriter( ((MemberVO)session.getAttribute("loginInfo")).getId() );
 		service.notice_reply_insert(vo);
-		
 		return "redirect:list.no";
 	}
 	
@@ -93,9 +92,6 @@ public class NoticeController {
 				vo.setFilepath(notice.getFilepath());
 			}
 		}
-		
-		
-		
 		
 		// 화면에서 변경 입력한 정보를 DB에 변경 저장한 후 상세 화면으로 연결
 		service.notice_update(vo);		
@@ -199,11 +195,11 @@ public class NoticeController {
 			int curPage, Model model, String search, String keyword) {
 		
 		// 공지글 처리 중 임의로 로그인해 두기 (admin) - 나중에 삭제할 것
-		HashMap<String, String> map = new HashMap<String, String>();
-		map.put("id", "hanul");
-		map.put("pw", "hanul");
-		
-		session.setAttribute("loginInfo", member.member_login(map));
+//		HashMap<String, String> map = new HashMap<String, String>();
+//		map.put("id", "hanul");
+//		map.put("pw", "hanul");
+//		
+//		session.setAttribute("loginInfo", member.member_login(map));
 		
 		
 		session.setAttribute("category", "no");

@@ -9,6 +9,11 @@
 <!--   	and pw = #{pw} -->
 <!--   </select> -->
   
+  <insert id="insert">
+   	insert into member (id, pw, name, img_path)
+	values (#{id}, #{pw}, #{name},#{img_path,jdbcType=VARCHAR})
+  </insert>
+  
   
   <!-- 고객 전체 목록 조회 -->
   <select id="login" resultType="member.MemberVO">

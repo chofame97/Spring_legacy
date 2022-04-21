@@ -1,5 +1,7 @@
 package com.hanul.clcd;
 
+import java.io.File;
+
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -22,6 +24,81 @@ public class BoardController {
 	@Autowired private BoardServiceImpl service;
 	@Autowired private BoardPage page;
 	@Autowired private CommonService common;
+	
+	// 방명록 글 수정 저장처리 요청 
+	@RequestMapping ("/update.bo")
+	public String update(BoardVO vo, HttpSession session, Model model,
+			MultipartFile file, String attach) {
+		// 원 글에 첨부 파일이 있었는지...
+		BoardVO board = service.board_detail(vo.getId());
+		String uuid = session.getServletContext().getRealPath("resources") + "/" + board.getFilepath();
+		
+		// 파일을 첨부하지 않은 경우
+		if ( file.isEmpty() ) {
+			// 원래부터 첨부된 파일이 없는 경우
+			// 원래 첨부된 파일이 있었는데 삭제한 경우
+			if ( attach.isEmpty() ) {
+				// 원래 첨부되어 있는 파일이 있다면 서버의 물리적 영역에서 삭제
+				if ( board.getFilename() != null ) {
+					File f = new File(uuid);
+					if (f.exists()) f.delete();	// 파일이 존재하면 파일을 삭제
+				}
+			} else {
+				// 원래 첨부된 파일을 그대로 사용하는 경우
+				vo.setFilename( board.getFilename() );
+				vo.setFilepath( board.getFilepath() );
+			}
+		} else {	// 파일을 첨부한 경우
+			vo.setFilename( file.getOriginalFilename() );
+			vo.setFilepath( common.fileUpload("board", file, session) );
+			
+			// 원래 첨부되어 있는 파일이 있다면 서버의 물리적 영역에서 삭제
+			if ( board.getFilename() != null) {
+				File f = new File(uuid);
+				if (f.exists())  f.delete();
+			}
+		}
+		
+		// 화면에서 수정한 정보들을 DB에 수정 저장 후 상세화면 연결
+		service.board_update(vo);
+		
+		model.addAttribute("url", "detail.bo");
+		model.addAttribute("id", vo.getId());
+		
+		return "board/redirect";
+//		return "redirect:detail.bo?id=" + vo.getId();
+	}
+	
+	// 방명록 글 수정 화면 요청
+	@RequestMapping ("/modify.bo")
+	public String modify(int id, Model model) {
+		// id에 해당하는 방명록 글을 DB에서 조회해와 수정화면에 출력
+		model.addAttribute("vo", service.board_detail(id));	
+		return "board/modify";
+	}
+	
+	// 방명록 글 삭제처리 요청
+	@RequestMapping ("/delete.bo")
+	public String delete(int id, HttpSession session, Model model) {
+		// 첨부 파일이 있는 글에 대해서는 해당 파일을 물리적 영역에서 삭제
+		BoardVO vo = service.board_detail(id);
+		if ( vo.getFilename() != null  ) {
+			File file = new File(session.getServletContext().getRealPath("resources") 
+							+ "/" + vo.getFilename());
+			if (file.exists() ) file.delete();			
+		}
+		
+		// id에 해당하는 방명록 글을 DB에서 삭제한 후 목록화면으로 연결
+		service.board_delete(id);
+	// 	return "redirect:list.bo";
+		
+		model.addAttribute("url", "list.bo");
+		model.addAttribute("page", page);	
+		
+		return "board/redirect";
+		
+	}
+	
 	
 	// 방명록 첨부파일 다운로드 요청
 	@RequestMapping ("/download.bo")

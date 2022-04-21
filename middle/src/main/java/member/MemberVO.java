@@ -1,7 +1,16 @@
 package member;
 
 public class MemberVO {
-	private String id, name, pw, addr, post, tel, gender, email, birth, naver, kakao, admin;
+	private String id, name, pw, addr, post, tel, gender, email, birth, naver, kakao, admin,img_path;
+	
+	
+	public String getImg_path() {
+		return img_path;
+	}
+
+	public void setImg_path(String img_path) {
+		this.img_path = img_path;
+	}
 
 	public String getId() {
 		return id;

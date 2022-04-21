@@ -4,6 +4,20 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="board.mapper">
 
+<!-- id에 해당하는 방명록 글 수정 저장 처리 -->
+<update id="update">
+	update board set title=#{title}, content=#{content}
+				, filename = #{filename, jdbcType=VARCHAR}
+				, filepath = #{filepath, jdbcType=VARCHAR}
+	where id = #{id}			
+</update>
+
+<!-- id에 해당하는 방명록 글 삭제 처리 -->
+<delete id="delete">
+	delete from board
+	where id = #{id}
+</delete>
+
 <!-- 해당 방명록 글의 조회수 증가 -->
 <update id="read">
 	update board set readcnt = readcnt+1
@@ -12,9 +26,26 @@
 
 <!-- 해당 방명록 글의 상세 정보 조회 -->
 <select id="detail" resultType="board.BoardVO">
+<!-- 	select b.*, (select name from member where id = b.writer) name -->
+<!-- 	from board b -->
+<!-- 	where id = #{id} -->
 	select b.*, (select name from member where id = b.writer) name
-	from board b
+	from
+	 (select board.*,
+		lag(id, 1, 0) over (order by id desc) as prev,
+		lag(title, 1, '이전글 없음') over (order by id desc) as prev_title,
+		lead(id, 1, 0) over (order by id desc) as next,
+		lead(title, 1, '다음글 없음') over (order by id desc) as next_title
+	  from board
+	  order by id desc) b
 	where id = #{id}
+<!-- 쿼리문 분석 함수 중 LAG (이전 로우의 값 반환)
+						 LEAD (이후 로우의 값 반환)
+형식) LAG(expr, offset, default) over (order by 절)
+의미) LAG 함수는 계산 대상 데이터(로우)들을 order by 절로 정렬하여
+      expr 에 명시된 값을 기준으로 이전 로우의 값을 반환함.
+      offset(생략 가능) default 1
+ -->	
 </select>
 
 <!-- 방명록 신규 글 저장 -->

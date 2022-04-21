@@ -120,7 +120,7 @@
 
 
 
-<!-- 공지사항 전체 글 목록 조회   -->
+<!-- 공지사항 전체 글 목록 조회 -->  
 <!--   <select id="list" resultType="notice.NoticeVO"> -->
 <!--   	select * from notice  -->
 <!-- 	select rownum no, n.*, (select name from member where id = n.writer) name  -->
