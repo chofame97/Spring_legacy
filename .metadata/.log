@@ -1,4 +1,4 @@
-!SESSION 2022-04-21 16:01:16.388 -----------------------------------------------
+!SESSION 2022-04-22 09:26:29.072 -----------------------------------------------
 eclipse.buildId=4.14.0.202203131612
 java.version=11.0.14
 java.vendor=Oracle Corporation
@@ -7,189 +7,9 @@ Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
 This is a continuation of log file D:\Study_Spring\Workspace\.metadata\.bak_0.log
-Created Time: 2022-04-21 16:04:49.638
+Created Time: 2022-04-22 12:25:52.533
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.638
-!MESSAGE Boot LS startup time from start to initialized: 1755ms
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.743
-!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LBfxUdFcisBatched = true
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.743
-!MESSAGE Setting up ClasspathListenerManager
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.744
-!MESSAGE Scheduling initial event for all projects ...
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.744
-!MESSAGE Scheduling initial event for all projects DONE
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.744
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.745
-!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LBfxUdFc => OK
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.746
-!MESSAGE classpath=25 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.747
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc Project01 false 25
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.747
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.749
-!MESSAGE classpath=32 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.750
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc SpringProject false 32
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.750
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.754
-!MESSAGE classpath=49 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.755
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc clcd false 49
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.756
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.757
-!MESSAGE classpath=25 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.757
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc exam false 25
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.758
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.759
-!MESSAGE classpath=27 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.760
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc hello false 27
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.760
-!MESSAGE exists = true open = true => deleted = false
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.761
-!MESSAGE classpath=35 entries
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.762
-!MESSAGE buffering callback sts4.classpath.LBfxUdFc middle false 35
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:49.763
-!MESSAGE executing callback sts4.classpath.LBfxUdFc 6 batched events
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-21 16:04:50.130
-!MESSAGE executing callback sts4.classpath.LBfxUdFc SUCCESS [done]
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.437
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.438
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.555
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.557
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.586
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.589
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.639
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.641
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.710
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.713
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.805
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:37.809
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:38.951
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.internal.indexdiff.GitResourceDeltaVisitor.visit(GitResourceDeltaVisitor.java:116)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.resourceChanged(IndexDiffCacheEntry.java:701)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
-	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:381)
-	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1505)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2329)
-	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:44)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:39.279
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:39.280
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:39.363
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:39.363
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:25:52.534
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -219,74 +39,13 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:39.388
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:39.388
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:39.683
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:29:30.206
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:39.695
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:29:30.208
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.058
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:29:30.488
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -317,7 +76,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.059
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:29:30.488
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -347,7 +106,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.072
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:29:31.724
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -378,7 +137,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.072
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:29:31.725
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -408,135 +167,13 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.626
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.627
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.649
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:07:40.649
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:59.914
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:34:30.993
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:07:59.916
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:34:30.994
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:00.132
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:34:31.354
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -567,7 +204,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:00.132
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:34:31.354
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -597,7 +234,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:00.145
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:34:32.493
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -628,7 +265,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:00.145
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:34:32.493
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -658,135 +295,13 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:01.449
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:01.450
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:01.464
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:08:01.465
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:21.203
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:47:13.190
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:21.204
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 12:47:13.191
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:21.519
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:47:13.438
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -817,7 +332,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:21.520
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:47:13.438
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -847,7 +362,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:21.538
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:47:14.579
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -878,7 +393,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:21.539
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 12:47:14.579
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -908,135 +423,13 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:22.659
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:22.660
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:22.674
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:22.674
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:40.355
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 13:07:39.396
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:40.357
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 13:07:39.398
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:40.665
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:07:39.644
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1067,7 +460,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:40.665
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:07:39.644
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1097,7 +490,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:40.682
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:07:40.913
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1128,7 +521,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:40.683
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:07:40.913
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1158,135 +551,13 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:41.689
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:41.689
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:41.701
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:41.702
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:44.141
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 13:11:29.220
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:09:44.143
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 13:11:29.222
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.314
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:11:29.610
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1317,7 +588,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.314
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:11:29.612
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1347,7 +618,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.353
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:11:30.716
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
@@ -1378,897 +649,7 @@ java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.354
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.370
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.370
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.384
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:44.385
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:45.528
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:45.528
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:45.541
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:09:45.542
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.123
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.125
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.184
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.187
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.200
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.201
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.236
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.237
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.288
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.290
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.360
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-21 16:10:45.361
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.266
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.266
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.301
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.302
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.700
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.701
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.712
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:19.713
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.355
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.356
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.368
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.369
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.910
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.911
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.929
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:27.929
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:35.724
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:35.725
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:50)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:199)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:35.735
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:156)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:647)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-21 16:11:35.736
+!ENTRY org.eclipse.egit.core 4 0 2022-04-22 13:11:30.717
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.nio.file.NoSuchFileException: D:\Study_Spring\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\middle\org.eclipse.egit.core\GitProjectData.properties

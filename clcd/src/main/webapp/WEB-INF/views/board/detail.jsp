@@ -13,9 +13,13 @@
 
 #popup-background {
 	position: absolute;left:0; top:0; width: 100%; height: 100%;
-	background-color: #000; opacity: 0.3; display: none;
+	background-color: #000; opacity: 0.3; display: none;	
 }
+.comment { margin: 0 auto; padding-top : 20px; width: 500px; }
+#comment_regist { width: 100%;}
+#comment_regist span { width: 50%; float: left; }
 
+textarea#comment { width: 95%; height: 60px; margin-top: 5px; resize: none; }
 </style>
 
 
@@ -68,8 +72,19 @@
 		<a class='btn-fill' onclick="$('form').attr('action', 'modify.bo'); $('form').submit()">수정</a>
 		<a class='btn-fill' onclick="if (confirm ('정말 삭제하시겠습니까?')) { href='delete.bo?id=${vo.id}' } ">삭제</a>
 	</c:if>
-	
 </div>
+
+<!-- 댓글 입력 처리 부분 -->
+<div class='comment'>
+	<div id='comment_regist'>
+		<span class='left'>댓글작성</span>
+		<span class='right'><a class='btn-fill-s' onclick="comment_regist()">댓글등록</a></span>
+		<textarea id='comment'></textarea>
+	</div>
+	<div id='comment_list'></div>
+</div>
+
+
 
 <!-- 목록 요청에 필요한 데이터를 post방식으로 전달하는 방법 -->
 <form action="list.bo" method="post">
@@ -103,9 +118,61 @@ $(document).on('click', '#preview-img', function () {
 }).on('click', '#popup-background', function () {
 	$('#popup, #popup-background').css('display', 'none');
 });
+</script>
+<script type="text/javascript">
+// 댓글 등록하기
+function comment_regist() {
+	if ( ${empty loginInfo }) {	// 로그인 정보가 없으면
+		alert("댓글을 등록하려면 로그인하세요!")
+		return;
+	} else if ( $.trim( $('#comment').val() ) == '' ) { // 로그인은 되어 있는데 댓글을 작성하지 않았다면
+		alert('댓글을 입력하세요!');
+		$('#comment').val('');			// 입력부 초기화
+		$('#comment').focus();			// 커서 이동
+		return;
+	} 
+	
+	$.ajax ({
+		/* 경로 형태로 url 지정 */
+		url: 'board/comment/regist'
+		, data : { pid : ${vo.id}, content:$('#comment').val() }
+			    /* 원 글의 id        입력한 댓글 */
+		, success: function ( response ) {
+			if ( response ) {	// 
+				alert('댓글이 등록되었습니다.');
+				$('#comment').val('');
+				comment_list();		// 댓글 목록 조회 요청
+			} else {
+				alert('댓글 등록이 실패되었습니다.')
+			}
+		}, error : function ( req, text ) {
+			alert (text + req.status);
+		}		
+	});	
+	
+}
 
+function comment_list() {
+	$.ajax({
+		url : 'board/comment/list/${vo.id}'
+		// , data : { pid : 772 }
+		, success : function ( response ) {
+			$('#comment_list').html( response );
+		}, error : function ( req, text ) {
+			alert(text + ':' + req.status);
+		}
+		
+		
+	});
+}
+
+$(function () {
+	comment_list();
+});
 
 </script>
+
+
 </html>
 
 

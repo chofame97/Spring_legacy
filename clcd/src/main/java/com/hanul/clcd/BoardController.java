@@ -8,10 +8,13 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import board.BoardCommentVO;
 import board.BoardPage;
 import board.BoardServiceImpl;
 import board.BoardVO;
@@ -24,6 +27,31 @@ public class BoardController {
 	@Autowired private BoardServiceImpl service;
 	@Autowired private BoardPage page;
 	@Autowired private CommonService common;
+	
+	// 방명록 글에 대한 댓글 목록 조회 요청
+	@RequestMapping ("/board/comment/list/{pid}")
+	public String comment_list(@PathVariable int pid, Model model) {
+		// 해당 글에 대한 댓글들을 DB에서 조회해 옴.
+		model.addAttribute("list", service.board_comment_list(pid));
+		
+		return "board/comment/comment_list";
+	}
+	
+	// 방명록 글에 대한 댓글저장처리 요청
+	@ResponseBody
+	@RequestMapping ("/board/comment/regist")
+	public boolean comment_regist(BoardCommentVO vo, HttpSession session) {
+		// 작성자의 경우 member의 id 값을 담아야 하므로 로그인 정보 확인
+		MemberVO member = (MemberVO) session.getAttribute("loginInfo");
+		vo.setWriter(member.getId());
+		
+		// 화면에서 입력한 댓글정보를 DB에 저장한 후 저장 여부를 확인
+		return service.board_comment_insert(vo) == 1 ? true : false;
+		// 반환결과가 1 이면 True 아니면 False 값을 반환...
+	}
+	
+	
+	
 	
 	// 방명록 글 수정 저장처리 요청 
 	@RequestMapping ("/update.bo")

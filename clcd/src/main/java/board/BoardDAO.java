@@ -1,5 +1,7 @@
 package board;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -45,6 +47,28 @@ public class BoardDAO implements BoardService {
 	@Override
 	public int board_delete(int id) {
 		return sql.delete("board.mapper.delete", id);
+	}
+
+	@Override
+	public int board_comment_insert(BoardCommentVO vo) {
+		return sql.insert("board.mapper.comment_insert", vo);
+	}
+
+	@Override
+	public int board_comment_update(BoardCommentVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int board_comment_delete(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<BoardCommentVO> board_comment_list(int pid) {
+		return sql.selectList("board.mapper.comment_list", pid);
 	}
 
 }
