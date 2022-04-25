@@ -54,6 +54,7 @@
 		<item value="org.springframework.ide.eclipse.aop.feature:3.9.21.202203211437-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.autowire.feature:3.9.21.202203211437-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.batch.feature:3.9.21.202203211437-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.boot.dash.feature:4.14.0.202203131612"/>
 		<item value="org.springframework.ide.eclipse.data.feature:3.9.21.202203211437-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.feature:3.9.21.202203211437-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.integration.feature:3.9.21.202203211437-RELEASE"/>
@@ -90,9 +91,11 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Study_Spring\Workspace\middle"/>
+			<item value="C:\Users\admin\Desktop\새 폴더\006895-master\pro20"/>
+			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="C:\Users\user\Desktop\Spring\SpringProject"/>
 			<item value="C:\Users\user\Desktop\Spring\clcd"/>
-			<item value="D:\Study_Spring\Workspace\clcd"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
