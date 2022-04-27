@@ -231,7 +231,7 @@ function daum_post() {
             
             // 건물명이 있을 경우 기존 주소에 건물명 값을 추가
             if (response.buildingName != '') addr += '(' + response.buildingName + ')';
-                      
+         	
             $('[name=addr]').eq(0).val(addr);
         }
     }).open();
