@@ -91,6 +91,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\user\Desktop\Spring\clcd"/>
 			<item value="C:\Users\user\Desktop\Spring\ex00"/>
 			<item value="C:\Users\user\Desktop\TeamGit"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit\TeamProject"/>
@@ -99,7 +100,6 @@
 			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="D:\Study_Spring\Workspace\TeamProject"/>
 			<item value="C:\Users\user\Desktop\Spring\TeamProject"/>
-			<item value="C:\Users\user\Desktop\Spring\clcd"/>
 			<item value="D:\Study_Spring\Workspace\SpringProject"/>
 			<item value="C:\Users\admin\Desktop\스프링 강의\006895-master\pro23"/>
 			<item value="C:\Users\admin\Desktop\스프링 강의\006895-master\pro20"/>
@@ -107,6 +107,7 @@
 			<item value="C:\Users\user\Desktop\Spring\SpringProject"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\user\Desktop\Spring\ex00\src\main\resources\org\study\mapper\TimeMapper.xml"/>
 			<item value=""/>
 		</list>
 	</section>
