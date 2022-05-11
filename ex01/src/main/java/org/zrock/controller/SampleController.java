@@ -30,7 +30,6 @@ public class SampleController {
 	
 	@GetMapping("/exupload")
 	public void exupload() {
-	
 		log.info("exupload...........");
 	}
 	

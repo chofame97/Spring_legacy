@@ -30,9 +30,8 @@
 	    <beans:property name="uploadTempDir" value ="file:/C:/upload/tmp"></beans:property>
 	    <beans:property name="maxInMemorySize" value="10485756"></beans:property>
  	</beans:bean> 
-	
-	
-	
+
+
 	<context:component-scan base-package="org.zrock.controller" />
 	<context:component-scan base-package="org.zrock.exception" />
 	
