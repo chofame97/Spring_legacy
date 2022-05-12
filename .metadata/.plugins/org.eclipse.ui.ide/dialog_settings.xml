@@ -91,6 +91,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit"/>
 			<item value="D:\Study_Spring\Workspace\ex00"/>
 			<item value="C:\Users\user\Desktop\Spring\clcd"/>
@@ -99,7 +100,6 @@
 			<item value="C:\Users\admin\Desktop\ProjectGit\TeamProject"/>
 			<item value="D:\Study_Spring\Workspace\middle"/>
 			<item value="C:\Users\admin\Desktop\clcd"/>
-			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="D:\Study_Spring\Workspace\TeamProject"/>
 			<item value="C:\Users\user\Desktop\Spring\TeamProject"/>
 			<item value="D:\Study_Spring\Workspace\SpringProject"/>

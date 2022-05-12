@@ -5,7 +5,29 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-05-10T11:00:00Z</updated>
+  <updated>2022-05-11T08:43:00Z</updated>
+  <entry>
+    <title>Spring Framework 5.3.20 and 5.2.22 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Brian Clozel</name>
+    </author>
+    <id>tag:spring.io,2022-05-11:4788</id>
+    <updated>2022-05-11T08:43:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.20&lt;/code&gt; and &lt;code&gt;5.2.22&lt;/code&gt; are available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.3.20&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.20"&gt;14 fixes and improvements&lt;/a&gt;.&lt;br/&gt;Spring Framework &lt;code&gt;5.2.22&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.22.RELEASE"&gt;2 backports&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In addition, these releases include fixes for 2 vulnerabilities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2022-22970"&gt;CVE-2022-22970&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt; &lt;em&gt;&amp;ldquo;Spring Framework DoS via Data Binding to MultipartFile or Servlet Part&amp;rdquo;&lt;/em&gt;&lt;br/&gt; Denial of Service (DoS) attack in Spring MVC or Spring WebFlux applications that handle file uploads and rely on data binding to set a &lt;code&gt;MultipartFile&lt;/code&gt; or &lt;code&gt;javax.servlet.Part&lt;/code&gt; to a field in a model object.&lt;br/&gt; Severity: &lt;a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"&gt;Medium&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2022-22971"&gt;CVE-2022-22971&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt; &lt;em&gt;&amp;ldquo;Spring Framework DoS with STOMP over WebSocket&amp;rdquo;&lt;/em&gt;&lt;br/&gt; Denial of service (DoS) attack by authenticated users in Spring applications with a STOMP over WebSocket endpoint.&lt;br/&gt; Severity: &lt;a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"&gt;Medium&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These new versions are recommended upgrades for all Spring production scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.20/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - May 10th, 2022</title>
     <link rel="alternate" href="https://spring.io/blog/2022/05/10/this-week-in-spring-may-10th-2022" />
@@ -805,19 +827,6 @@ public class GraphQlExample {&#xD;
 &lt;p&gt;You can find more details about the respective releases &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.6.3"&gt;here&lt;/a&gt; and
  &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.5.6"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Cloud guru Tiffany Jernigan</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/04/14/a-bootiful-podcast-cloud-guru-tiffany-jernigan" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-04-15:4767</id>
-    <updated>2022-04-15T06:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talk about his first in-person conference since the pandemic descended upon us -the fabulous Devnexus 2022 show - and talks to colleague, teacher, friend, and Kubernetes legend &lt;a href="https://twitter.com/tiffanyfayj"&gt;Tiffany Jernigan (@tiffanyfayj)&lt;/a&gt;. &lt;/p&gt;
-&lt;iframe title="Cloud guru Tiffany Jernigan " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=q38a6-11fdde3-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
