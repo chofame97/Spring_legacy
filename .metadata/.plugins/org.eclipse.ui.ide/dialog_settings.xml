@@ -91,6 +91,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\admin\Desktop\ProjectGit\Test"/>
+			<item value="C:\Users\admin\Desktop\ProjectGit\WebProject"/>
 			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit"/>
 			<item value="D:\Study_Spring\Workspace\ex00"/>

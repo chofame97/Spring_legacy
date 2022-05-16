@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="TeamProject"/>
-<aop-project name="ex00"/>
-<aop-project name="ex01"/>
+<aop-project name="Web_Project"/>
 <aop-project name="ex02"/>
 <aop-project name="clcd"/>
+<aop-project name="middle"/>
 </aop-reference-model>

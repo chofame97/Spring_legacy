@@ -26,4 +26,5 @@
 	
 	<mybatis-spring:scan base-package="org.zerock.mapper"/>
 	
+	<import resource="classpath:data/default.xml"/>
 </beans>
