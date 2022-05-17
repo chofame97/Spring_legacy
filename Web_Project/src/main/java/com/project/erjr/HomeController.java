@@ -9,10 +9,13 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import org.apache.ibatis.session.SqlSession;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +24,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
+
+import list.DAO;
 
 
 @Controller
@@ -104,11 +109,11 @@ public class HomeController {
 			return "";
 		}
 		
-		//@Autowired @Qualifier("bteam") private SqlSession sql;
+		
 		@ResponseBody
 		@RequestMapping(value ="/giuplist", produces = "application/json;charset=UTF-8")
-		public void giuplist() {
-			//System.out.println(new GiupDAO().select());
+		public String giuplist() {
+			return new DAO().getList();
 			
 		}
 		

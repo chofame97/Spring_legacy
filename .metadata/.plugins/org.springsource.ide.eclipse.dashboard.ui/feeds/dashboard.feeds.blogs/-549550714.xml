@@ -5,7 +5,255 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-05-13T09:20:00Z</updated>
+  <updated>2022-05-16T05:32:00Z</updated>
+  <entry>
+    <title>CVE-2022-22976: BCrypt skips salt rounds for work factor of 31</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/15/cve-2022-22976-bcrypt-skips-salt-rounds-for-work-factor-of-31" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2022-05-16:4792</id>
+    <updated>2022-05-16T05:32:00Z</updated>
+    <content type="html">&lt;div class="sect1"&gt;
+&lt;h2 id="severity"&gt;&lt;a class="anchor" href="#severity"&gt;&lt;/a&gt;Severity&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N/E:P/RL:O/RC:U/CR:M/IR:L/AR:L/MAV:L/MAC:H/MPR:H/MUI:N/MS:C/MC:H/MI:N/MA:N"&gt;Medium - 5.3&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="vendor"&gt;&lt;a class="anchor" href="#vendor"&gt;&lt;/a&gt;Vendor&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring by VMWare&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="affected-vmware-products-and-versions"&gt;&lt;a class="anchor" href="#affected-vmware-products-and-versions"&gt;&lt;/a&gt;Affected VMWare Products and Versions&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Security 5.5.x prior to 5.5.7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Security 5.6.x prior to 5.6.4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Earlier unsupported versions&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="description"&gt;&lt;a class="anchor" href="#description"&gt;&lt;/a&gt;Description&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Security versions 5.5.x prior to 5.5.7, 5.6.x prior to 5.6.4, and earlier unsupported versions contain an integer overflow vulnerability. When using the BCrypt class with the maximum work factor (31), the encoder does not perform any salt rounds, due to an integer overflow error.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The default settings are not affected by this CVE.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Only in circumstances where the BCryptPasswordEncoder has been configured with the maximum work factor are affected. Due to current limitations in computer hardware, the use of such a high work factor is computationally impractical.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You need to be using BCrypt with a work factor of 31 to be impacted. You can check whether or not your passwords are impacted by using the following &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="mitigation"&gt;&lt;a class="anchor" href="#mitigation"&gt;&lt;/a&gt;Mitigation&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Prior to updating to the latest, please update your BCryptPasswordEncoder to use a lower number of rounds. At the time of this writing, &lt;a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction"&gt;OWASP recommends&lt;/a&gt; a value of 10.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Then, use the above-referenced &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt; to update your password hashes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Once your password hashes are updated, you should update your version according to the following table:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5.5.x users should upgrade to 5.5.7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;5.6.x users should upgrade to 5.6.4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Or users should upgrade to 5.7.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After upgrading your Spring Security dependency, you should advise affected users to change their password.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A mitigation FAQ can also be found in the &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="credit"&gt;&lt;a class="anchor" href="#credit"&gt;&lt;/a&gt;Credit&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This issue was identified and responsibly reported by Eyal Kaspi.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="references"&gt;&lt;a class="anchor" href="#references"&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://docs.spring.io/spring-security/site/docs/current/reference/html5/#authentication-password-storage"&gt;Password Encoder&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="history"&gt;&lt;a class="anchor" href="#history"&gt;&lt;/a&gt;History&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;2021-04-10: Initial vulnerability report published.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>CVE-2022-22975: Authorization Bypass in RegexRequestMatcher</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/15/cve-2022-22975-authorization-bypass-in-regexrequestmatcher" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2022-05-16:4791</id>
+    <updated>2022-05-16T05:27:00Z</updated>
+    <content type="html">&lt;div class="sect1"&gt;
+&lt;h2 id="severity"&gt;&lt;a class="anchor" href="#severity"&gt;&lt;/a&gt;Severity&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N&amp;amp;version=3.1"&gt;High&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="vendor"&gt;&lt;a class="anchor" href="#vendor"&gt;&lt;/a&gt;Vendor&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring by VMware&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="description"&gt;&lt;a class="anchor" href="#description"&gt;&lt;/a&gt;Description&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In Spring Security versions 5.5.6 and 5.5.7 and older unsupported versions, RegexRequestMatcher can easily be misconfigured to be bypassed on some servlet containers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Applications using RegexRequestMatcher with &lt;code&gt;.&lt;/code&gt; in the regular expression are possibly vulnerable to an authorization bypass.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="affected-vmware-products-and-versions"&gt;&lt;a class="anchor" href="#affected-vmware-products-and-versions"&gt;&lt;/a&gt;Affected VMware Products and Versions&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Applications using RegexRequestMatcher with a regular expression that contains &lt;code&gt;.&lt;/code&gt; are likely vulnerable to an authorization bypass for versions:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Security 5.5.x prior to 5.5.7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Security 5.6.x prior to 5.6.4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Earlier unsupported versions&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="mitigation"&gt;&lt;a class="anchor" href="#mitigation"&gt;&lt;/a&gt;Mitigation&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Users should update to a version that includes fixes. Releases that have fixed this issue include Spring Security:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;5.5.x users should upgrade to 5.5.7 or greater
+5.6.x users should upgrade to 5.6.4 or greater&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="credit"&gt;&lt;a class="anchor" href="#credit"&gt;&lt;/a&gt;Credit&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This vulnerability was discovered and responsibly reported by:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hiroki Nishino (LINE Corporation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toshiki Sasazaki (LINE Corporation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Yoshinori Hayashi (LINE Corporation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jonghwan Kim (LINE Corporation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security 5.7.0, 5.6.4, 5.5.7 Released - Fixes CVE-2022-22975 &amp; CVE-2022-22976</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/15/spring-security-5-7-0-5-6-4-5-5-7-released-fixes-cve-2022-22975-cve-2022-22976" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2022-05-16:4793</id>
+    <updated>2022-05-15T19:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Security 5.7.0  (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.7.0"&gt;release notes&lt;/a&gt;), 5.6.4  (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.6.4"&gt;release notes&lt;/a&gt;), 5.5.7 (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.5.7"&gt;release notes&lt;/a&gt;) have been released which fix&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/cve-2022-22975-authorization-bypass-in-regexrequestmatcher"&gt;CVE-2022-22975&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/cve-2022-22976-bcrypt-skips-salt-rounds-for-work-factor-of-31"&gt;CVE-2022-22976&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Please update as soon as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data 2021.2 and 2022.0 M4 released.</title>
     <link rel="alternate" href="https://spring.io/blog/2022/05/13/spring-data-2021-2-and-2022-0-m4-released" />
@@ -652,147 +900,6 @@ dependencyManagement {&#xD;
 &lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.5.13"&gt;31 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.5.13/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session 2021.2.0-RC1, 2021.1.3 and 2021.0.6 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/04/20/spring-session-2021-2-0-rc1-2021-1-3-and-2021-0-6-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Eleftheria Stein-Kousathana</name>
-    </author>
-    <id>tag:spring.io,2022-04-20:4773</id>
-    <updated>2022-04-20T23:21:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I¡¯m pleased to announce the release of Spring Session &lt;code&gt;2021.2.0-RC1&lt;/code&gt;, &lt;code&gt;2021.1.3&lt;/code&gt; and &lt;code&gt;2021.0.6&lt;/code&gt;.&lt;br/&gt;The &lt;code&gt;2021.2.0&lt;/code&gt; release train is entering the RC phase. If you haven¡¯t done so yet, please give it a try!&lt;br/&gt;The &lt;code&gt;2021.1.3&lt;/code&gt; and &lt;code&gt;2021.0.6&lt;/code&gt; releases deliver bug fixes and dependency upgrades.&lt;br/&gt;For your convenience, Spring Boot will pick up these artifacts with its upcoming releases.&lt;/p&gt;
-&lt;p&gt;The following modules were updated as part of &lt;code&gt;2021.2.0-RC1&lt;/code&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Session Core &lt;code&gt;2.7.0-RC1&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.7.0-RC1"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Data Redis &lt;code&gt;2.7.0-RC1&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.7.0-RC1"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session JDBC &lt;code&gt;2.7.0-RC1&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.7.0-RC1"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Hazelcast &lt;code&gt;2.7.0-RC1&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.7.0-RC1"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session MongoDB &lt;code&gt;2.7.0-RC1&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.7.0-RC1"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session for Apache Geode &lt;code&gt;2.7.0-RC1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The following modules were updated as part of &lt;code&gt;2021.1.3&lt;/code&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Session Core &lt;code&gt;2.6.3&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.6.3"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Data Redis &lt;code&gt;2.6.3&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.6.3"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session JDBC &lt;code&gt;2.6.3&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.6.3"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Hazelcast &lt;code&gt;2.6.3&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.6.3"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session MongoDB &lt;code&gt;2.6.3&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.6.3"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session for Apache Geode &lt;code&gt;2.6.1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The following modules were updated as part of &lt;code&gt;2021.0.6&lt;/code&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Session Core &lt;code&gt;2.5.6&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.5.6"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Data Redis &lt;code&gt;2.5.6&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.5.6"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session JDBC &lt;code&gt;2.5.6&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.5.6"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session Hazelcast &lt;code&gt;2.5.6&lt;/code&gt; - &lt;a href="https://github.com/spring-projects/spring-session/releases/tag/2.5.6"&gt;release notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session for Apache Geode &lt;code&gt;2.5.6&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.0 RC1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/04/20/spring-for-graphql-1-0-rc1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-04-20:4772</id>
-    <updated>2022-04-20T09:45:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of everyone involved, I&amp;rsquo;m pleased to announce the availability of the first and final release candidate of Spring for GraphQL 1.0. We&amp;rsquo;re finally going to release a 1.0 version on May 17, the reference version for Spring Boot 2.7.0. We&amp;rsquo;ve shipped a few noteworthy changes and one important new feature in this release.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;The Spring for GraphqL Boot starter is up-to-date with the changes discussed in this post and Spring Boot 2.7.0-RC1 is scheduled to be released on Thursday this week.&lt;/em&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#graphql-over-rsocket" class="anchor" name="graphql-over-rsocket"&gt;&lt;/a&gt;GraphQL over RSocket&lt;/h3&gt;
-&lt;p&gt;Spring for GraphQL started out with the HTTP and WebSocket transports - must haves in the GraphQL world. Our programming model allows adding others too, and our existing infrastructure pointed at another clear candidate: &lt;a href="https://rsocket.io/"&gt;the RSocket protocol&lt;/a&gt;. In RC1 we&amp;rsquo;ve added client and server support for GraphQL over RSocket.&lt;/p&gt;
-&lt;p&gt;RSocket supports streaming through reactive streams back-pressure, request throttling, session resumption, among others. Moreover, &lt;a href="https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#rsocket"&gt;RSocket features&lt;/a&gt; provide all the semantics necessary to be a transport for all GraphQL requests, without an additional protocol on top such as is necessary for GraphQL over HTTP and over WebSocket.&lt;/p&gt;
-&lt;p&gt;RSocket itself runs over connection-oriented transports such as WebSocket, TCP, and others. In Spring Boot, you can &lt;a href="https://docs.spring.io/spring-boot/docs/2.7.0-SNAPSHOT/reference/html/messaging.html#messaging.rsocket"&gt;set up an RSocket server over WebSocket or TCP&lt;/a&gt;. After that you&amp;rsquo;ll just need to configure a &amp;ldquo;route&amp;rdquo; for the GraphQL messages through the &lt;code&gt;&amp;quot;spring.graphql.rsocket.mapping&amp;quot;&lt;/code&gt; property, e.g. &lt;code&gt;&amp;quot;spring.graphql.rsocket.mapping=graphql&amp;quot;&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;You can then use &lt;a href="https://github.com/making/rsc"&gt;rsc&lt;/a&gt; to test your GraphQL API:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;?  ~ rsc --request --route=graphql --dataMimeType=&amp;quot;application/graphql+json&amp;quot; --data=&amp;#39;{&amp;quot;query&amp;quot;:&amp;quot;{\n  greeting \n}&amp;quot;}&amp;#39; --debug tcp://example.spring.io:9191&#xD;
-DEBUG 39367 --- [actor-tcp-nio-2] io.rsocket.FrameLogger                   : sending -&amp;gt;&#xD;
-Frame =&amp;gt; Stream ID: 0 Type: SETUP Flags: 0b0 Length: 83&#xD;
-Data:&#xD;
-&#xD;
-DEBUG 39367 --- [actor-tcp-nio-2] io.rsocket.FrameLogger                   : sending -&amp;gt;&#xD;
-Frame =&amp;gt; Stream ID: 1 Type: REQUEST_RESPONSE Flags: 0b100000000 Length: 50&#xD;
-Metadata:&#xD;
-         +-------------------------------------------------+&#xD;
-         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-|00000000| fe 00 00 08 07 67 72 61 70 68 71 6c             |.....graphql    |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-Data:&#xD;
-         +-------------------------------------------------+&#xD;
-         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-|00000000| 7b 22 71 75 65 72 79 22 3a 22 7b 5c 6e 20 20 67 |{&amp;quot;query&amp;quot;:&amp;quot;{\n  g|&#xD;
-|00000010| 72 65 65 74 69 6e 67 20 5c 6e 7d 22 7d          |reeting \n}&amp;quot;}   |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-DEBUG 39367 --- [actor-tcp-nio-2] io.rsocket.FrameLogger                   : receiving -&amp;gt;&#xD;
-Frame =&amp;gt; Stream ID: 1 Type: NEXT_COMPLETE Flags: 0b1100000 Length: 45&#xD;
-Data:&#xD;
-         +-------------------------------------------------+&#xD;
-         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-|00000000| 7b 22 64 61 74 61 22 3a 7b 22 67 72 65 65 74 69 |{&amp;quot;data&amp;quot;:{&amp;quot;greeti|&#xD;
-|00000010| 6e 67 22 3a 22 48 65 6c 6c 6f 2c 20 52 53 6f 63 |ng&amp;quot;:&amp;quot;Hello, RSoc|&#xD;
-|00000020| 6b 65 74 21 22 7d 7d                            |ket!&amp;quot;}}         |&#xD;
-+--------+-------------------------------------------------+----------------+&#xD;
-{&amp;quot;data&amp;quot;:{&amp;quot;greeting&amp;quot;:&amp;quot;Hello, RSocket!&amp;quot;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Spring for GraphQL also ships a dedicated GraphQL client for this case and&lt;br/&gt;&lt;a href="https://docs.spring.io/spring-boot/docs/2.7.0-SNAPSHOT/reference/html/web.html#web.graphql.transports.rsocket"&gt;Spring Boot auto-configures the builder for it&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;&lt;br/&gt;@Component&#xD;
-public class GraphQlExample {&#xD;
-&#xD;
-    private final RSocketGraphQlClient client;&#xD;
-&#xD;
-    public GraphQlExample(RSocketGraphQlClient.Builder&amp;lt;?&amp;gt; builder) {&#xD;
-        client = builder.tcp(&amp;quot;example.spring.io&amp;quot;, 8181).route(&amp;quot;graphql&amp;quot;).build();&#xD;
-    }&#xD;
-&#xD;
-    public Mono&amp;lt;String&amp;gt; getGreeting() {&#xD;
-        return client.document(&amp;quot;{ greeting }&amp;quot;)&#xD;
-            .retrieve(&amp;quot;greeting&amp;quot;)&#xD;
-            .toEntity(String.class);&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#default-graphql-media-type" class="anchor" name="default-graphql-media-type"&gt;&lt;/a&gt;Default GraphQL Media Type&lt;/h3&gt;
-&lt;p&gt;So far, Spring for GraphQL was exclusively using &lt;code&gt;&amp;quot;application/json&amp;quot;&lt;/code&gt; as a media type for HTTP requests and responses. We decided that, for our release candidate, we needed to better align with the &lt;a href="https://github.com/graphql/graphql-over-http/blob/92b57a9179834318b6f15e1d23afc49368dd5e3c/spec/GraphQLOverHTTP.md#content-types"&gt;official GraphQL over HTTP specification&lt;/a&gt;. From now on, if the client doesn&amp;rsquo;t request any specific media type, we&amp;rsquo;ll use &lt;code&gt;&amp;quot;application/graphql+json&amp;quot;&lt;/code&gt; by default. We&amp;rsquo;ll keep supporting &lt;code&gt;&amp;quot;application/json&amp;quot;&lt;/code&gt; if clients request it. In any case, clients should recognize the &lt;code&gt;&amp;quot;+json&amp;quot;&lt;/code&gt; suffix and encode/decode accordingly.&lt;/p&gt;&lt;h3&gt;&lt;a href="#graphql-documents-locations" class="anchor" name="graphql-documents-locations"&gt;&lt;/a&gt;GraphQL documents locations&lt;/h3&gt;
-&lt;p&gt;In the previous releases, &lt;code&gt;&amp;quot;classpath:graphql&amp;quot;&lt;/code&gt; was the default location for schema files, client query documents and test client query documents. This could lead to situations where some would overshadow others and make your setup confusing.&lt;br/&gt;We&amp;rsquo;re refined the situation with the following changes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The server schema files remain with the current default &lt;code&gt;&amp;quot;graphql&amp;quot;&lt;/code&gt; on the main classpath&lt;/li&gt;
-  &lt;li&gt;The tester defaults to &lt;code&gt;&amp;quot;graphql-test&amp;quot;&lt;/code&gt; (under src/test) for document files to test the server with&lt;/li&gt;
-  &lt;li&gt;The client defaults to &lt;code&gt;&amp;quot;graphql-documents&amp;quot;&lt;/code&gt; (under src/main), with a way to use a custom location for different remote APIs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Don&amp;rsquo;t forget to update your application with those new locations!&lt;/p&gt;&lt;h3&gt;&lt;a href="#graphqlsource-builder" class="anchor" name="graphqlsource-builder"&gt;&lt;/a&gt;GraphQlSource Builder&lt;/h3&gt;
-&lt;p&gt;GraphQL Java offers two ways to create a schema. One is to declare it in schema definition files which is known as the SDL way. The other way is to define it programmatically through Java code.&lt;/p&gt;
-&lt;p&gt;Spring for GraphQL and its &lt;code&gt;GraphQlSource&lt;/code&gt; builder focus on the former, i.e. the SDL way, by looking up and parsing &lt;code&gt;.graphqls&lt;/code&gt; files, preparing a &lt;code&gt;RuntimeWiring&lt;/code&gt;, and letting applications customize it. This is the more recent and &lt;a href="https://www.graphql-java.com/documentation/schema/"&gt;recommended option&lt;/a&gt; in GraphQL Java too. However, we recognize that the purpose of &lt;code&gt;GraphQlSource&lt;/code&gt; is to expose any &lt;code&gt;graphql.GraphQL&lt;/code&gt; instance regardless of how the &lt;code&gt;graphql.schema.GraphQLSchema&lt;/code&gt; was prepared.&lt;/p&gt;
-&lt;p&gt;In this release we&amp;rsquo;ve adjusted the &lt;code&gt;GraphQlSource&lt;/code&gt; builder, extracting common config options into a base builder and keeping SDL related options in an extension. This means an application can now skip the steps related to initializing the schema and instead supply an externally prepared &lt;code&gt;GraphQLSchema&lt;/code&gt;. This doesn&amp;rsquo;t bring first class support for programmatic schema creation, but it does bring more clarity, and leaves the option to do so in the future, depending on feedback and use cases.&lt;/p&gt;&lt;h3&gt;&lt;a href="#community" class="anchor" name="community"&gt;&lt;/a&gt;Community&lt;/h3&gt;
-&lt;p&gt;Last but not least, thanks for the continued feedback and discussions in the Spring for GraphQL issue tracker. We really appreciate it as it makes the project stronger and better!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - April 19th, 2022</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/04/19/this-week-in-spring-april-19th-2022" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-04-19:4771</id>
-    <updated>2022-04-19T19:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been quite the week since we last talked! I flew to Atlanta, GA, for my first in-person show since the pandemic - Devnexus 2022. I loved the experience! Hopefully, the only souvenirs I&amp;rsquo;ll have are the amazing memories and not COVID. I loved to see so many smiling faces. Thanks so much for having me, Devnexus, and for running an amazing show. It was a privilege to return. &lt;/p&gt;
-&lt;p&gt;And now, without further ado, let&amp;rsquo;s dive right into the roundup. &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/14/a-bootiful-podcast-cloud-guru-tiffany-jernigan"&gt;A Bootiful Podcast: Cloud guru Tiffany Jernigan&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/linux_china/status/1506083934068621312?s=21"&gt;Jacky Chan on Twitter: &amp;ldquo;My new open source tool httpx, CLI and IDE plugins to test REST API, GraphQL, gRPC, RSocket, Kafka etc services with HTTP DSL &lt;a href="https://t.co/jkvJG2syff"&gt;https://t.co/jkvJG2syff&lt;/a&gt; JetBrains/Neovim plugins are all ready. Support by @java and @graalvm&amp;rdquo; / Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.i-programmer.info/news/80-java/15369-ngrok-spring-boot-starter-tunneling-the-easy-way.html"&gt;Ngrok Spring Boot Starter - Tunneling The Easy Way&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://medium.com/codex/spring-boot-with-drools-engine-7119774c559f"&gt;Spring Boot with Drools Engine. In this blog we would see how Spring integrates with Drools Engine. | CodeX&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/19/spring-data-2021-2-0-rc1-2021-1-4-and-2021-0-11-released"&gt;Spring Data 2021.2.0-RC1, 2021.1.4, and 2021.0.11 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/13/spring-framework-5-3-19-and-5-2-21-available-now"&gt;Spring Framework 5.3.19 and 5.2.21 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/13/spring-framework-data-binding-rules-vulnerability-cve-2022-22968"&gt;Spring Framework Data Binding Rules Vulnerability (CVE-2022-22968)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/18/spring-security-5-6-3-and-5-5-6-available-now"&gt;Spring Security 5.6.3 and 5.5.6 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/04/18/spring-security-5-7-0-rc1-released"&gt;Spring Security 5.7.0-RC1 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/JavaAtMicrosoft/status/1516118110201421828"&gt;Build or migrate great applications that deliver great value to your customers. Register now &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
