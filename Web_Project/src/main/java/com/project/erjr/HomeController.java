@@ -6,26 +6,26 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.ibatis.session.SqlSession;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
-import list.DAO;
+import list.GuinDTO;
+import list.MemberDAO;
 
 
 @Controller
@@ -109,12 +109,26 @@ public class HomeController {
 			return "";
 		}
 		
-		
+		@Autowired private MemberDAO dao;
+		@Autowired @Qualifier("bteam") SqlSession sql;
 		@ResponseBody
 		@RequestMapping(value ="/giuplist", produces = "application/json;charset=UTF-8")
 		public String giuplist() {
-			return new DAO().getList();
+			List<GuinDTO> df = sql.selectList("test.mapper.test");		
 			
+			return gson.toJson(df);
+		}
+		
+		@ResponseBody
+		@RequestMapping(value ="/giupClick", produces = "application/json;charset=UTF-8")
+		public String giupClick(HttpServletRequest req) {
+			
+			//dto.setMember_id(req.getParameter("id"));
+			//dto.setGiup_title(req.getParameter("postTitle"));
+			
+				System.out.println(req.getParameter("id"));
+			
+			return "";
 		}
 		
 	

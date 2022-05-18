@@ -5,7 +5,36 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-05-16T05:32:00Z</updated>
+  <updated>2022-05-17T23:05:00Z</updated>
+  <entry>
+    <title>This Week in Spring - May 17th, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/17/this-week-in-spring-may-17th-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-05-17:4795</id>
+    <updated>2022-05-17T23:05:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I am in beautiful Barcelona, Spain, this week, ahead of the upcoming Spring I/O show. I just spent a wonderful week in amazing England, meeting old friends, speaking at Devoxx UK, etc. &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/05/12/a-bootiful-podcast-easymock-contributor-java-champion-and-java-luminary-henri-tremblay"&gt;A Bootiful Podcast: EasyMock contributor, Java Champion, and Java luminary Henri Tremblay&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Also, while we&amp;rsquo;re on the topic of Spring Boot 2.7, remember that Spring for GraphQL is also 1.0 this week! I&amp;rsquo;m so excited :)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blog.devgenius.io/example-of-spring-cloud-function-with-aws-lambda-25af76c82916?gi=1306ed836953"&gt;Example of Spring Cloud Function with AWS Lambda&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://activiti.gitbook.io/activiti-7-developers-guide/"&gt;I love this - the Activiti 7 developer&amp;rsquo;s guide - showcases some cool patterns and principles for building service-centric workflow solutions with Spring Boot and Activiti &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/maciejwalkowiak/status/1525730129871355905?s=12&amp;t=tbiFaeV-P1c1lrJ2Uu8a7w"&gt;a handy tip from Maciej Walkowiak on Twitter that Spring Boot 2.7 (due - :checks notes: - &lt;em&gt;this week&lt;/em&gt;!) adds native support for Jackson Mixins with &lt;code&gt;@JsonMixin&lt;/code&gt; annotation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzucommunityedition.io/posts/tanzu-community-edition-012-speeds-developer-time-to-productivity/"&gt;Speed time to developer productivity with v0.12 release of VMware Tanzu Community Edition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://apurvsheth.medium.com/spring-boot-serverless-aws-lambda-with-api-gateway-258f48b7f22f"&gt;Spring Boot ? Serverless AWS Lambda With API Gateway | by Apurv Sheth | May, 2022 | Medium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/05/13/spring-data-2021-2-and-2022-0-m4-released"&gt;Spring Data 2021.2 and 2022.0 M4 released.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now"&gt;Spring Framework 5.3.20 and 5.2.22 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/05/12/spring-framework-6-0-0-m4-available-now"&gt;Spring Framework 6.0.0-M4 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://talktotheduck.dev/spring-transaction-debugging-in-production-with-lightrun"&gt;Spring Transaction Debugging in Production with Lightrun&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoworld.com/article/2076153/code-generation-using-javadoc.html"&gt;this article by our own dr. Mark Pollack was written in 1999 and laid the groundwork for what would become EJBDoclet and XDoclet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=A1V71peRNn0"&gt;&#x1f680; New in Spring Framework 6: HTTP Interfaces&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/05/16/volume-populators-beta/"&gt;Blog: Kubernetes 1.24: Volume Populators Graduate to Beta&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/05/13/grpc-probes-now-in-beta/"&gt;Blog: Kubernetes 1.24: gRPC container probes in beta&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>CVE-2022-22976: BCrypt skips salt rounds for work factor of 31</title>
     <link rel="alternate" href="https://spring.io/blog/2022/05/15/cve-2022-22976-bcrypt-skips-salt-rounds-for-work-factor-of-31" />
@@ -15,218 +44,39 @@
     </author>
     <id>tag:spring.io,2022-05-16:4792</id>
     <updated>2022-05-16T05:32:00Z</updated>
-    <content type="html">&lt;div class="sect1"&gt;
-&lt;h2 id="severity"&gt;&lt;a class="anchor" href="#severity"&gt;&lt;/a&gt;Severity&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N/E:P/RL:O/RC:U/CR:M/IR:L/AR:L/MAV:L/MAC:H/MPR:H/MUI:N/MS:C/MC:H/MI:N/MA:N"&gt;Medium - 5.3&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="vendor"&gt;&lt;a class="anchor" href="#vendor"&gt;&lt;/a&gt;Vendor&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring by VMWare&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="affected-vmware-products-and-versions"&gt;&lt;a class="anchor" href="#affected-vmware-products-and-versions"&gt;&lt;/a&gt;Affected VMWare Products and Versions&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Security 5.5.x prior to 5.5.7&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Security 5.6.x prior to 5.6.4&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Earlier unsupported versions&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="description"&gt;&lt;a class="anchor" href="#description"&gt;&lt;/a&gt;Description&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Security versions 5.5.x prior to 5.5.7, 5.6.x prior to 5.6.4, and earlier unsupported versions contain an integer overflow vulnerability. When using the BCrypt class with the maximum work factor (31), the encoder does not perform any salt rounds, due to an integer overflow error.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The default settings are not affected by this CVE.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Only in circumstances where the BCryptPasswordEncoder has been configured with the maximum work factor are affected. Due to current limitations in computer hardware, the use of such a high work factor is computationally impractical.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You need to be using BCrypt with a work factor of 31 to be impacted. You can check whether or not your passwords are impacted by using the following &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="mitigation"&gt;&lt;a class="anchor" href="#mitigation"&gt;&lt;/a&gt;Mitigation&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Prior to updating to the latest, please update your BCryptPasswordEncoder to use a lower number of rounds. At the time of this writing, &lt;a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction"&gt;OWASP recommends&lt;/a&gt; a value of 10.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Then, use the above-referenced &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt; to update your password hashes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Once your password hashes are updated, you should update your version according to the following table:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;5.5.x users should upgrade to 5.5.7&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;5.6.x users should upgrade to 5.6.4&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Or users should upgrade to 5.7.0&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;After upgrading your Spring Security dependency, you should advise affected users to change their password.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;A mitigation FAQ can also be found in the &lt;a href="https://spring.io/security-advisories/cve-2022-22976"&gt;mitigation tool&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="credit"&gt;&lt;a class="anchor" href="#credit"&gt;&lt;/a&gt;Credit&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This issue was identified and responsibly reported by Eyal Kaspi.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="references"&gt;&lt;a class="anchor" href="#references"&gt;&lt;/a&gt;References&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://docs.spring.io/spring-security/site/docs/current/reference/html5/#authentication-password-storage"&gt;Password Encoder&lt;/a&gt; documentation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="history"&gt;&lt;a class="anchor" href="#history"&gt;&lt;/a&gt;History&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;2021-04-10: Initial vulnerability report published.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/spring-security-5-7-0-5-6-4-5-5-7-released-fixes-cve-2022-22978-cve-2022-22976"&gt;Spring Security 5.7.0, 5.6.4, 5.5.7 were released&lt;/a&gt; to fix &lt;a href="https://tanzu.vmware.com/security/cve-2022-22976"&gt;CVE-2022-22976: BCrypt skips salt rounds for work factor of 31&lt;/a&gt;. Please update as soon as possible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
-    <title>CVE-2022-22975: Authorization Bypass in RegexRequestMatcher</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/15/cve-2022-22975-authorization-bypass-in-regexrequestmatcher" />
+    <title>CVE-2022-22978: Authorization Bypass in RegexRequestMatcher</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/15/cve-2022-22978-authorization-bypass-in-regexrequestmatcher" />
     <category term="engineering" label="Engineering" />
     <author>
       <name>Rob Winch</name>
     </author>
     <id>tag:spring.io,2022-05-16:4791</id>
     <updated>2022-05-16T05:27:00Z</updated>
-    <content type="html">&lt;div class="sect1"&gt;
-&lt;h2 id="severity"&gt;&lt;a class="anchor" href="#severity"&gt;&lt;/a&gt;Severity&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N&amp;amp;version=3.1"&gt;High&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="vendor"&gt;&lt;a class="anchor" href="#vendor"&gt;&lt;/a&gt;Vendor&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring by VMware&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="description"&gt;&lt;a class="anchor" href="#description"&gt;&lt;/a&gt;Description&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In Spring Security versions 5.5.6 and 5.5.7 and older unsupported versions, RegexRequestMatcher can easily be misconfigured to be bypassed on some servlet containers.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Applications using RegexRequestMatcher with &lt;code&gt;.&lt;/code&gt; in the regular expression are possibly vulnerable to an authorization bypass.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="affected-vmware-products-and-versions"&gt;&lt;a class="anchor" href="#affected-vmware-products-and-versions"&gt;&lt;/a&gt;Affected VMware Products and Versions&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Applications using RegexRequestMatcher with a regular expression that contains &lt;code&gt;.&lt;/code&gt; are likely vulnerable to an authorization bypass for versions:&lt;/p&gt;
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;strong&gt;UPDATES&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Spring Security 5.5.x prior to 5.5.7&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Security 5.6.x prior to 5.6.4&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Earlier unsupported versions&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[05-17]&lt;/strong&gt; Due to a mixup CVE-2022-22975 should have been CVE-2022-22978. The blog has been updated to reflect this correction.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="mitigation"&gt;&lt;a class="anchor" href="#mitigation"&gt;&lt;/a&gt;Mitigation&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
+&lt;h1 id="cve-2022-22978-authorization-bypass-in-regexrequestmatcher" class="sect0"&gt;&lt;a class="anchor" href="#cve-2022-22978-authorization-bypass-in-regexrequestmatcher"&gt;&lt;/a&gt;CVE-2022-22978 : Authorization Bypass in RegexRequestMatcher&lt;/h1&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;Users should update to a version that includes fixes. Releases that have fixed this issue include Spring Security:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;5.5.x users should upgrade to 5.5.7 or greater
-5.6.x users should upgrade to 5.6.4 or greater&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="credit"&gt;&lt;a class="anchor" href="#credit"&gt;&lt;/a&gt;Credit&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This vulnerability was discovered and responsibly reported by:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Hiroki Nishino (LINE Corporation)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Toshiki Sasazaki (LINE Corporation)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Yoshinori Hayashi (LINE Corporation)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Jonghwan Kim (LINE Corporation)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/spring-security-5-7-0-5-6-4-5-5-7-released-fixes-cve-2022-22978-cve-2022-22976"&gt;Spring Security 5.7.0, 5.6.4, 5.5.7 were released&lt;/a&gt; to fix &lt;a href="https://tanzu.vmware.com/security/cve-2022-22978"&gt;CVE-2022-22978 : Authorization Bypass in RegexRequestMatcher&lt;/a&gt;. Please update as soon as possible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
-    <title>Spring Security 5.7.0, 5.6.4, 5.5.7 Released - Fixes CVE-2022-22975 &amp; CVE-2022-22976</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/15/spring-security-5-7-0-5-6-4-5-5-7-released-fixes-cve-2022-22975-cve-2022-22976" />
+    <title>Spring Security 5.7.0, 5.6.4, 5.5.7 Released - Fixes CVE-2022-22978 &amp; CVE-2022-22976</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/05/15/spring-security-5-7-0-5-6-4-5-5-7-released-fixes-cve-2022-22978-cve-2022-22976" />
     <category term="releases" label="Releases" />
     <author>
       <name>Rob Winch</name>
@@ -234,12 +84,22 @@
     <id>tag:spring.io,2022-05-16:4793</id>
     <updated>2022-05-15T19:00:00Z</updated>
     <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;strong&gt;UPDATES&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;[05-17]&lt;/strong&gt; Due to a mixup CVE-2022-22975 should have been CVE-2022-22978. The blog has been updated to reflect this correction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
 &lt;p&gt;Spring Security 5.7.0  (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.7.0"&gt;release notes&lt;/a&gt;), 5.6.4  (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.6.4"&gt;release notes&lt;/a&gt;), 5.5.7 (&lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.5.7"&gt;release notes&lt;/a&gt;) have been released which fix&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/cve-2022-22975-authorization-bypass-in-regexrequestmatcher"&gt;CVE-2022-22975&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/cve-2022-22978-authorization-bypass-in-regexrequestmatcher"&gt;CVE-2022-22978 &lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://spring.io/blog/2022/05/15/cve-2022-22976-bcrypt-skips-salt-rounds-for-work-factor-of-31"&gt;CVE-2022-22976&lt;/a&gt;.&lt;/p&gt;
@@ -885,21 +745,6 @@ dependencyManagement {&#xD;
 &lt;/ul&gt;
 &lt;p&gt;This vulnerability exposes OAuth 2.0 Client applications only.&lt;/p&gt;
 &lt;p&gt;Please review the information in the CVE report and upgrade immediately.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.5.13 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/04/21/spring-boot-2-5-13-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Moritz Halbritter</name>
-    </author>
-    <id>tag:spring.io,2022-04-21:4775</id>
-    <updated>2022-04-21T08:51:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.5.13&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.5.13"&gt;31 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.5.13/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

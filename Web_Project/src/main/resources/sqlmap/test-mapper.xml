@@ -3,8 +3,17 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test.mapper">
-	<select id="test" resultType="String">
-		select giup_title  from guinlist where working_day = '주2일'
+	<select id="test" resultType="list.GuinDTO">
+		select * from guinlist
+	</select>
+	
+	<insert id="join">
+	insert into guinlist (pic, giup_name, giup_title, giup_loaction, working_day, working_time)
+	values ('','서구 편의점','글제목임니다','서구','주3일','14시 ~ 22시')
+	</insert>
+	
+	<select id="test1" resultType="list.GuinDTO">
+		select * from guinlist where member_id=#{id} and giup_title = #{postTitle}
 	</select>
 	
 </mapper>
