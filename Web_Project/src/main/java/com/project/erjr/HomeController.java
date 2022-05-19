@@ -8,8 +8,10 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
+import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.ibatis.session.SqlSession;
@@ -17,6 +19,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -31,7 +35,11 @@ import list.MemberDAO;
 @Controller
 public class HomeController {
 	
+	@Autowired private MemberDAO dao;
+	@Autowired @Qualifier("bteam") SqlSession sql;
+	
 	Gson gson = new Gson();
+	
 	// 메인 페이지
 	@RequestMapping("/")
 	public String home() {
@@ -63,54 +71,10 @@ public class HomeController {
 		return "goLogin";
 	}
 	
-	// 사업자 등록번호 조회
-		@RequestMapping("/numbertest")
-		public String numberTest(@RequestParam String number) {
-			URL url;
-			try {
-				url = new URL(
-						"https://api.odcloud.kr/api/nts-businessman/v1/status?serviceKey=gS7w9BBE3He%2FFTkjgInbf8iJxTmmAPaAYpTeopmJeJ6TM%2FXfi4wbAdmBZWUCcqe3l6dNktJ%2BNoClU2F5Vpr9Qg%3D%3D");
-				HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
-				httpConn.setRequestMethod("POST");
-
-				httpConn.setRequestProperty("accept", "application/json");
-				httpConn.setRequestProperty("Authorization",
-						"gS7w9BBE3He/FTkjgInbf8iJxTmmAPaAYpTeopmJeJ6TM/Xfi4wbAdmBZWUCcqe3l6dNktJ+NoClU2F5Vpr9Qg==");
-				httpConn.setRequestProperty("Content-Type", "application/json");
-
-				httpConn.setDoOutput(true);
-				OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
-
-				writer.write("{  \"b_no\": [    \"" + number + "\"  ]}");
-				writer.flush();
-				writer.close();
-				httpConn.getOutputStream().close();
-
-				InputStream responseStream = httpConn.getResponseCode() / 100 == 2 ? httpConn.getInputStream()
-						: httpConn.getErrorStream();
-				Scanner s = new Scanner(responseStream).useDelimiter("\\A");
-				String response = s.hasNext() ? s.next() : "";
-				System.out.println(response);
-
-				// 받아온 json 파일 파싱
-				JSONObject jsonObject = new JSONObject(response);
-				JSONArray datas = jsonObject.getJSONArray("data");
-
-				for (int i = 0; i < datas.length(); i++) {
-					jsonObject = datas.getJSONObject(i);
-					String value = jsonObject.getString("b_stt_cd");
-
-					System.out.println(value);
-					return value;
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return "";
-		}
+	
 		
-		@Autowired private MemberDAO dao;
-		@Autowired @Qualifier("bteam") SqlSession sql;
+	
+		// 구인글 목록(메인, 구인페이지)
 		@ResponseBody
 		@RequestMapping(value ="/giuplist", produces = "application/json;charset=UTF-8")
 		public String giuplist() {
@@ -119,6 +83,7 @@ public class HomeController {
 			return gson.toJson(df);
 		}
 		
+		// 구인게시글 상세 페이지
 		@ResponseBody
 		@RequestMapping(value ="/giupClick", produces = "application/json;charset=UTF-8")
 		public String giupClick(HttpServletRequest req) {
@@ -130,6 +95,10 @@ public class HomeController {
 			
 			return "";
 		}
+		
+		
+		
+		
 		
 	
 }
