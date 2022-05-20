@@ -5,5 +5,12 @@ import lombok.Data;
 @Data
 public class MemberDTO {
 	private String member_email;
-	private int checkNum;
+
+	public MemberDTO(String member_email) {
+		super();
+		this.member_email = member_email;
+	}
+	
+	
+	
 }

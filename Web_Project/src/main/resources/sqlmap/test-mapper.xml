@@ -3,17 +3,20 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test.mapper">
+	
+	<!-- 구인 게시글 전체 조회 -->
 	<select id="test" resultType="list.GuinDTO">
 		select * from guinlist
 	</select>
 	
-	<insert id="join">
-	insert into guinlist (pic, giup_name, giup_title, giup_loaction, working_day, working_time)
-	values ('','서구 편의점','글제목임니다','서구','주3일','14시 ~ 22시')
-	</insert>
-	
+	<!-- 구인 특정 회원 게시글 조회 -->
 	<select id="test1" resultType="list.GuinDTO">
 		select * from guinlist where member_id=#{id} and giup_title = #{postTitle}
+	</select>
+	
+	<!-- 개인회원가입 아이디 중복 조회 -->
+	<select id="idlist" resultType="integer">
+		select count(*) from member where member_id = #{id}
 	</select>
 	
 </mapper>

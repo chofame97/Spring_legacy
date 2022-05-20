@@ -40,6 +40,7 @@ public class HomeController {
 	
 	Gson gson = new Gson();
 	
+			
 	// 메인 페이지
 	@RequestMapping("/")
 	public String home() {
@@ -74,27 +75,27 @@ public class HomeController {
 	
 		
 	
-		// 구인글 목록(메인, 구인페이지)
-		@ResponseBody
-		@RequestMapping(value ="/giuplist", produces = "application/json;charset=UTF-8")
-		public String giuplist() {
-			List<GuinDTO> df = sql.selectList("test.mapper.test");		
-			
-			return gson.toJson(df);
-		}
+	// 구인글 목록(메인, 구인페이지)
+	@ResponseBody
+	@RequestMapping(value ="/giuplist", produces = "application/json;charset=UTF-8")
+	public String giuplist() {
+		List<GuinDTO> df = sql.selectList("test.mapper.test");		
 		
-		// 구인게시글 상세 페이지
-		@ResponseBody
-		@RequestMapping(value ="/giupClick", produces = "application/json;charset=UTF-8")
-		public String giupClick(HttpServletRequest req) {
-			
-			//dto.setMember_id(req.getParameter("id"));
-			//dto.setGiup_title(req.getParameter("postTitle"));
-			
-				System.out.println(req.getParameter("id"));
-			
-			return "";
-		}
+		return gson.toJson(df);
+	}
+	
+	// 구인게시글 상세 페이지
+	@ResponseBody
+	@RequestMapping(value ="/giupClick", produces = "application/json;charset=UTF-8")
+	public String giupClick(HttpServletRequest req) {
+		
+		//dto.setMember_id(req.getParameter("id"));
+		//dto.setGiup_title(req.getParameter("postTitle"));
+		
+			System.out.println(req.getParameter("id"));
+		
+		return "";
+	}
 		
 		
 		

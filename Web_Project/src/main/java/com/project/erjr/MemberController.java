@@ -25,10 +25,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
+import Member.EmailNumberVO;
+import Member.GiupNumberDTO;
+import Member.IdDTO;
 import Member.MemberDTO;
+import list.MemberDAO;
 
 @Controller
 public class MemberController {
+	
 	@Autowired @Qualifier("bteam") SqlSession sql;
 	
 	// 이메일 인증
@@ -37,19 +42,19 @@ public class MemberController {
 	
 	Gson gson = new Gson();
 	
+	
 	// 이메일 인증
 	@ResponseBody
 	@RequestMapping(value ="/emailCheck", produces = "application/json;charset=UTF-8")
 	public String emailCheck(HttpServletRequest req) {
-			
 			JSONObject json = new JSONObject(req.getParameter("email"));
 			String email = json.getString("member_email"); 
 			
-			System.out.println(email);
 			// 인증번호 난수 생성 ,범위 (111,111 ~ 999,999)
 			Random random = new Random();
 			int checkNum = random.nextInt(888888) + 111111;
 			
+			System.out.println("이메일 : "+email);
 			System.out.println("인증번호 : "+checkNum);
 			
 			String setForm = "hanulbteam@gmail.com";
@@ -68,14 +73,25 @@ public class MemberController {
 	        }catch(Exception e) {
 	            e.printStackTrace();
 	        }
+			EmailNumberVO vo = new EmailNumberVO(checkNum);
 			
-		return gson.toJson(checkNum);
+		return gson.toJson(vo);
 	}
 			
+
 	
 	// 사업자 등록번호 조회
-	@RequestMapping("/numbertest")
-	public String numberTest(@RequestParam String number) {
+	@ResponseBody
+	@RequestMapping(value ="/numbertest", produces = "application/json;charset=UTF-8")
+	public String numberTest(HttpServletRequest req) {
+		
+		JSONObject json = new JSONObject(req.getParameter("number"));
+		
+		String nu = json.getString("b_no");
+		
+		System.out.println(nu);
+		System.out.println("사업자 등록번호 : "+req.getParameter("number"));
+		GiupNumberDTO dto = null;
 		URL url;
 		try {
 			url = new URL(
@@ -91,7 +107,7 @@ public class MemberController {
 			httpConn.setDoOutput(true);
 			OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
-			writer.write("{  \"b_no\": [    \"" + number + "\"  ]}");
+			writer.write("{  \"b_no\": [    \"" + nu + "\"  ]}");
 			writer.flush();
 			writer.close();
 			httpConn.getOutputStream().close();
@@ -101,23 +117,48 @@ public class MemberController {
 			Scanner s = new Scanner(responseStream).useDelimiter("\\A");
 			String response = s.hasNext() ? s.next() : "";
 			System.out.println(response);
-
 			// 받아온 json 파일 파싱
 			JSONObject jsonObject = new JSONObject(response);
 			JSONArray datas = jsonObject.getJSONArray("data");
-
+			String value = "";
 			for (int i = 0; i < datas.length(); i++) {
 				jsonObject = datas.getJSONObject(i);
-				String value = jsonObject.getString("b_stt_cd");
-
-				System.out.println(value);
-				return value;
+				value = jsonObject.getString("b_stt_cd");
 			}
+			dto = new GiupNumberDTO(value);
+			System.out.println(gson.toJson(dto));
+			return gson.toJson(dto);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "";
+		return gson.toJson(dto);
 	}
+	
+	// 아이디 중복검사
+	@ResponseBody
+	@RequestMapping(value ="/idDuplicate", produces = "application/json;charset=UTF-8")
+	public String idTest(HttpServletRequest req) {
+		JSONObject json = new JSONObject(req.getParameter("id"));	
+		String id = json.getString("id");
+		IdDTO dto = new IdDTO(id);
+		int count = sql.selectOne("test.mapper.idlist",dto);
+		IdDTO countt = new IdDTO(""+count);
+		return gson.toJson(countt);
+	}
+	
+	// 사업자번호 중복검사
+	@ResponseBody
+	@RequestMapping(value ="/idDuplicate", produces = "application/json;charset=UTF-8")
+	public String giupNumberTest(HttpServletRequest req) {
+		JSONObject json = new JSONObject(req.getParameter("b_no"));	
+		String id = json.getString("id");
+		IdDTO dto = new IdDTO(id);
+		int count = sql.selectOne("test.mapper.idlist",dto);
+		IdDTO countt = new IdDTO(""+count);
+		return gson.toJson(countt);
+	}
+
 	
 	
 }
