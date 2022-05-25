@@ -91,12 +91,13 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Study_Spring\Workspace\ex00"/>
+			<item value="C:\Users\admin\Desktop\ProjectGit\Web_Project"/>
 			<item value="D:\Study_Spring\Workspace\hello"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit\Test"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit\WebProject"/>
 			<item value="D:\Study_Spring\Workspace\clcd"/>
 			<item value="C:\Users\admin\Desktop\ProjectGit"/>
-			<item value="D:\Study_Spring\Workspace\ex00"/>
 			<item value="C:\Users\user\Desktop\Spring\clcd"/>
 			<item value="C:\Users\user\Desktop\Spring\ex00"/>
 			<item value="C:\Users\user\Desktop\TeamGit"/>
@@ -112,8 +113,8 @@
 			<item value="C:\Users\user\Desktop\Spring\SpringProject"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="D:\Study_Spring\Workspace\Web_Project\src\main\resources\data\default.xml"/>
 			<item value=""/>
+			<item value="D:\Study_Spring\Workspace\Web_Project\src\main\resources\data\default.xml"/>
 			<item value="C:\Users\user\Desktop\Spring\ex00\src\main\resources\org\study\mapper\TimeMapper.xml"/>
 		</list>
 	</section>

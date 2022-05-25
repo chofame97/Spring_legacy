@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="Web_Project"/>
 <aop-project name="ex02"/>
+<aop-project name="ex00"/>
 <aop-project name="clcd"/>
 <aop-project name="middle"/>
 </aop-reference-model>
