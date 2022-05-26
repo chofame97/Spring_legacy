@@ -62,10 +62,12 @@
     -->
     <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
+    <!--
     <Connector executor="tomcatThreadPool"
-               port="1212" protocol="HTTP/1.1"
+               port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
+    -->
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
          SSLImplementation will depend on the presence of the APR/native
@@ -150,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Web_Project" path="/erjr" reloadable="true" source="org.eclipse.jst.jee.server:Web_Project"/></Host>
+      <Context docBase="ex02" path="/controller" reloadable="true" source="org.eclipse.jst.jee.server:ex02"/></Host>
     </Engine>
   </Service>
 </Server>

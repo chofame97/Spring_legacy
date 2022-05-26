@@ -171,7 +171,9 @@ If you are making use of third-party jars that offer Spring integration, you sho
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;Although we don&amp;#8217;t recommend it for production, you can try Spring Boot 3.0 milestones today to see how hard it will be to migrate your project.
-Trying the milestone on a branch of your code is a great way to preempt any potential problems.&lt;/p&gt;
+Trying the milestones on a branch of your code is a great way to preempt any potential problems.
+They are available from &lt;a href="https://repo.spring.io/milestone" class="bare"&gt;https://repo.spring.io/milestone&lt;/a&gt;.
+Creating a project on &lt;a href="https://start.spring.io" class="bare"&gt;https://start.spring.io&lt;/a&gt; and selecting the latest 3.0 milestone will include the necessary repositories in the build configuration.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;We&amp;#8217;re always interested in feedback and we&amp;#8217;re very happy when bugs get identified before we release the GA version.&lt;/p&gt;
