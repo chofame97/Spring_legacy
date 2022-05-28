@@ -20,6 +20,7 @@ public class TimeMapperTests {
 	@Test
 	public void testTime1() {
 		log.info(timeMapper.getTime());
+		
 	}
 	
 	@Test
