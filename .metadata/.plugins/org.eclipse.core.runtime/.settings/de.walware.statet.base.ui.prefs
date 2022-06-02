@@ -1,7 +1,3 @@
-//editors/optionsParameters.background=25,29,31
-//editors/optionsParameters.foreground=216,216,216
-//editors/optionsProposals.background=25,29,31
-//editors/optionsProposals.foreground=216,216,216
 eclipse.preferences.version=1
 editors/options/Parameters.background=255,255,255
 editors/options/Parameters.foreground=51,51,51

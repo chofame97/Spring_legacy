@@ -32,8 +32,29 @@
 	
 	<!-- 개인 로그인 -->
 	<select id="soloLogin" resultType="integer">
-		select count(*) from member where member_id=#{member_id} and member_pw=#{member_pw}
+		select count(*) from member where member_id=#{member_id} and member_pw=#{member_pw} and member_auth='1'
 	</select>
+	<select id="memberInfo" resultType="Member.MemberVO">
+		select * from member where member_id=#{member_id} and member_pw=#{member_pw}
+	</select>
+	
+ 	<!-- 기업 회원가입 -->
+	<insert id="insertMember1">
+		insert into member (member_id,member_nickname,member_pw,member_email,member_b_no,member_b_nm,member_p_nm,member_auth)
+		values (#{member_id},#{member_nickname},#{member_pw},#{member_email},#{member_b_no},#{member_b_nm},#{member_p_nm},'2')
+	</insert>
+	
+	<!-- 기업 로그인 -->
+	<select id="giupLogin" resultType="integer">
+		select count(*) from member where member_id=#{member_id} and member_pw=#{member_pw} and member_auth='2'
+	</select>
+	<select id="memberInfo1" resultType="Member.MemberVO">
+		select * from member where member_id=#{member_id} and member_pw=#{member_pw}
+	</select>
+	<select id="memberInfo" resultType="Member.MemberVO">
+		select * from member where member_id=#{member_id} and member_pw=#{member_pw}
+	</select>
+	
 	
 	
 </mapper>

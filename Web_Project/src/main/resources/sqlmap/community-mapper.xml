@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="community.mapper">
+	<select id="list" resultType="communitymobile.CommunityVO">
+		select c.*, ( select member_nickname from member where member_id = c.member_id) member_nickname, (select count(clip_id) from cmn_clip where board_id = c.board_id) board_comments_cnt
+		from cmn_board c
+		order by board_id desc
+	</select>
+	<select id="selectlist" resultType="communitymobile.CommunityVO">
+		select c.*, ( select member_nickname from member where member_id = c.member_id) member_nickname, (select count(clip_id) from cmn_clip where board_id = c.board_id) board_comments_cnt
+		from cmn_board c
+		where c.board_category = #{board_category}
+		order by board_id desc
+	</select>
+	<select id="detail" resultType="communitymobile.CommunityVO">
+		select *
+		from cmn_board
+		where board_id = #{board_id}
+	</select>
+	<insert id="insert">
+		insert into cmn_board (board_id, member_id, board_title, board_contents, board_category)
+		values (seq_cmn_board.nextval, #{member_id}, #{board_title}, #{board_contents}, #{board_category})
+	</insert>
+	<update id="update">
+		update cmn_board
+		set		board_title = #{board_title},
+				board_contents = #{board_contents}
+		where	board_id = #{board_id}
+	</update>
+	<delete id="delete">
+		delete 	cmn_board
+		where	board_id = #{board_id}
+		
+		delete	cmn_clip
+		where	board_id = #{board_id}
+	</delete>
+	<select id="comment" resultType="communitymobile.CommunityCommentDTO">
+		select c.*, (select member_nickname from member where member_id = c.member_id) member_nickname
+		from cmn_clip c
+		where board_id = #{board_id}
+		order by clip_id asc
+	</select>
+	<insert id="comment_insert">
+		insert into cmn_clip (board_id, member_id, clip_contents)
+		values (#{board_id}, #{member_id}, #{clip_contents})
+	</insert>
+	<delete id="comment_delete">
+		delete	cmn_clip
+		where	clip_id = #{clip_id}
+	</delete>
+	<update id="comment_update">
+		update	cmn_clip
+		set		clip_contents = #{clip_contents}
+		where	clip_id = #{clip_id}
+	</update>
+
+</mapper>

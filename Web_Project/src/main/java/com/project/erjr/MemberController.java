@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,12 +26,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
+import Member.EmailDTO;
 import Member.EmailNumberVO;
 import Member.GiupNumberDTO;
 import Member.IdDTO;
 import Member.LoginVO;
 import Member.MemberVO;
-import Member.EmailDTO;
 import Member.NickNameDTO;
 import list.MemberDAO;
 
@@ -177,19 +178,74 @@ public class MemberController {
 	// 안드로이드 개인 로그인
 	@ResponseBody
 	@RequestMapping(value = "/soloLogin", produces = "application/json;charset=UTF-8")
-	public boolean andSoloLogin(HttpServletRequest req) {
-		boolean result = false;
+	public String andSoloLogin(HttpServletRequest req) {
+		String result = "false";
 		JSONObject json = new JSONObject(req.getParameter("idpw"));
-		System.out.println(json);
-		LoginVO vo = gson.fromJson(req.getParameter("idpw"), LoginVO.class);
 		
+		System.out.println(json);
+		
+		LoginVO vo = gson.fromJson(req.getParameter("idpw"), LoginVO.class);
+		MemberVO vd;
 		int cnt = sql.selectOne("test.mapper.soloLogin",vo);
 		
 		if(cnt == 1) {
-			result = true;
+			result = "true";
+			vd = sql.selectOne("test.mapper.memberInfo",vo);
+			String auth = vd.getMember_auth();
+			if(auth.equals("1")) {
+				System.out.println(result);
+				System.out.println(vd);
+				return gson.toJson(vd);
+			}
+			return null;
+		}else {
+			return null;
 		}
-		System.out.println(""+result);
-		return result;
 	}
+	
+	
+	// ============================================================================
+	// 안드로이드 기업 회원가입
+	@ResponseBody
+	@RequestMapping(value = "/andSignup1", produces = "application/json;charset=UTF-8")
+	public boolean andSignup1(HttpServletRequest req) {
+		JSONObject json = new JSONObject(req.getParameter("member"));
+		MemberVO vo = gson.fromJson(req.getParameter("member"), MemberVO.class);
+		boolean check = sql.insert("test.mapper.insertMember1",vo) == 0 ? false : true;
+		
+		return check;
+	}
+		
+	
+	// 안드로이드 기업 로그인
+	@ResponseBody
+	@RequestMapping(value = "/giupLogin", produces = "application/json;charset=UTF-8")
+	public String andGiupLogin(HttpServletRequest req) {
+		String result = "false";
+		JSONObject json = new JSONObject(req.getParameter("idpw"));
+		
+		System.out.println(json);
+		
+		LoginVO vo = gson.fromJson(req.getParameter("idpw"), LoginVO.class);
+		MemberVO vd;
+		int cnt = sql.selectOne("test.mapper.giupLogin",vo);
+		
+		if(cnt == 1) {
+			result = "true";
+			vd = sql.selectOne("test.mapper.memberInfo1",vo);
+			String auth = vd.getMember_auth();
+			if(auth.equals("2")) {
+				System.out.println(result);
+				System.out.println(vd);
+				return gson.toJson(vd);
+			}
+			return null;
+
+		}else {
+			return null;
+		}
+	}
+	
+
 	
 }

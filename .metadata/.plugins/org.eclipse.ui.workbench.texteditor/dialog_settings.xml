@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&lt;Host"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Click"/>
+			<item value="test.mapper"/>
+			<item value="mapper"/>
 			<item value="&lt;host"/>
 			<item value="catalina"/>
 			<item value="number"/>
 			<item value="context-support"/>
 			<item value="bteam"/>
-			<item value="hr"/>
-			<item value="hanul"/>
-			<item value="oracle"/>
-			<item value="orcle"/>
-			<item value="after insert"/>
-			<item value="null"/>
-			<item value="after"/>
-			<item value="hikari"/>
-			<item value="lombok"/>
-			<item value="로고"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
